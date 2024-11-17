@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
-from users.models import User
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -47,7 +46,7 @@ INSTALLED_APPS = [
 
 
     'attendance',
-    'cources',
+    'courses',
     'grades',
     'notifications',
     'students',
@@ -138,7 +137,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL=User
+AUTH_USER_MODEL='users.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -147,23 +146,28 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
-}
+        'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],   
+}   
 
 SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
     'BLACKLIST_AFTER_ROTATION': True,
     'ROTATE_REFRESH_TOKENS': True,
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
 }
 
 
-DJOSER = {
-    'LOGIN_FIELD': 'username',
-    'USER_CREATE_PASSWORD_RETYPE': True,
-    'SERIALIZERS': {
-        'user_create': 'users.serializers.UserCreateSerializer',
-        'user': 'users.serializers.UserSerializer',
-    },
-}
+# DJOSER = {
+#     'LOGIN_FIELD': 'username',
+#     'USER_CREATE_PASSWORD_RETYPE': True,
+#     'SERIALIZERS': {
+#         'user_create': 'users.serializers.UserCreateSerializer',
+#         'user': 'users.serializers.UserSerializer',
+#     },
+# }
 
 CELERY_BROKER_URL = 'redis://localhost:6379/0'  # Change the Redis URL if needed
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
