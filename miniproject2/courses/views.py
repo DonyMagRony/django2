@@ -22,7 +22,7 @@ class CourseViewSet(viewsets.ModelViewSet):
     serializer_class = CourseSerializer
     permission_classes = [IsAuthenticated]
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['instructor', 'name']
+    filterset_fields = ['professor', 'name']
     
     def get_permissions(self):
         """
@@ -83,6 +83,7 @@ class EnrollmentViewSet(viewsets.ModelViewSet):
     """
     queryset = Enrollment.objects.all()
     serializer_class = EnrollmentSerializer
+    permission_classes = [IsAuthenticated]
 
     def get_permissions(self):
         """

@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     'drf_yasg',
     'celery',
+    'django_celery_beat',
+
 
 
     'attendance',
@@ -173,8 +175,12 @@ SIMPLE_JWT = {
 #     },
 # }
 
-CELERY_BROKER_URL = 'redis://localhost:6379/0'  # Change the Redis URL if needed
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+CELERY_BROKER_URL = 'redis://localhost:6379/0'  # Example using Redis
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'  # Example result backend
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+# celery -A miniproject2 worker --loglevel=info
+# celery -A miniproject2 beat --loglevel=info
 
 
 # settings.py

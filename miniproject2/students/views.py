@@ -1,14 +1,15 @@
-from django.core.cache import cache  # Correct import for caching
+from django.core.cache import cache
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import Student
 from .serializers import StudentSerializer
+from users.permissions import IsStudent  # Import the custom permission
 
 class StudentViewSet(viewsets.ModelViewSet):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]  # Ensure user is authenticated
 
     def retrieve(self, request, *args, **kwargs):
         student_id = kwargs.get("pk")
@@ -29,6 +30,10 @@ class StudentViewSet(viewsets.ModelViewSet):
         cache.delete(f"student_{instance.id}")
 
     def get_queryset(self):
-        if self.request.user.role == 'student':
+        """
+        If the user is a student, restrict access to their own data.
+        Admins or non-students can access the full list.
+        """
+        if IsStudent().has_permission(self.request, self):
             return self.queryset.filter(user=self.request.user)
         return self.queryset
