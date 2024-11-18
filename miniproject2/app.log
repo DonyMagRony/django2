@@ -1,0 +1,180 @@
+INFO 2024-11-17 19:45:57,725 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 19:46:03,163 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-17 19:46:03,666 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 19:46:15,186 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-17 19:46:15,654 autoreload Watching for file changes with StatReloader
+INFO 2024-11-17 19:46:17,008 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-18 16:25:37,982 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-18 16:25:39,747 log Not Found: /
+WARNING 2024-11-18 16:25:39,747 basehttp "GET / HTTP/1.1" 404 3259
+WARNING 2024-11-18 16:25:39,925 log Not Found: /favicon.ico
+WARNING 2024-11-18 16:25:39,926 basehttp "GET /favicon.ico HTTP/1.1" 404 3310
+INFO 2024-11-18 16:25:57,154 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:25:57,666 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:26:03,149 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:26:03,668 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:26:37,222 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:26:37,767 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:27:17,559 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-18 16:27:19,344 log Not Found: /
+WARNING 2024-11-18 16:27:19,344 basehttp "GET / HTTP/1.1" 404 3259
+INFO 2024-11-18 16:27:23,374 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-18 16:27:23,422 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2024-11-18 16:27:23,426 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2024-11-18 16:27:23,431 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:27:23,433 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:27:23,433 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:27:23,433 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:27:23,437 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2024-11-18 16:27:23,762 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 19204
+INFO 2024-11-18 16:28:13,166 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:28:13,689 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:28:19,128 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:28:19,606 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:28:29,255 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:28:29,734 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:28:34,188 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:28:34,667 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:28:37,032 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:28:37,468 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:28:59,652 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:29:00,139 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:29:06,637 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:29:07,105 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:32:40,584 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:32:41,123 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:32:43,525 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:32:43,989 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:32:47,407 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-18 16:32:47,707 basehttp "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2024-11-18 16:32:47,707 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 25772
+INFO 2024-11-18 16:33:06,312 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:33:06,829 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:33:13,368 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:33:13,888 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:33:16,842 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-18 16:33:17,140 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 26008
+INFO 2024-11-18 16:33:34,038 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:33:34,529 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:33:35,980 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:33:36,469 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:33:37,927 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:33:38,417 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:33:40,877 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-18 16:33:41,176 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 25822
+INFO 2024-11-18 16:33:49,327 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-18 16:33:49,854 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:34:20,014 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:34:20,538 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:38:46,432 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-18 16:38:46,693 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 25772
+INFO 2024-11-18 16:38:59,053 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:38:59,570 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:39:00,979 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:39:01,452 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:39:05,937 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:39:06,453 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:39:07,899 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:39:08,396 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:39:09,234 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-18 16:39:09,581 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 25890
+INFO 2024-11-18 16:39:30,362 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:39:30,882 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:39:32,314 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:39:32,866 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:39:35,614 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-18 16:39:35,874 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 25916
+INFO 2024-11-18 16:40:10,814 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:40:11,378 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:40:12,519 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-18 16:40:12,791 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 25890
+INFO 2024-11-18 16:49:51,621 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:49:52,184 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:49:56,867 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-18 16:49:57,258 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 25890
+INFO 2024-11-18 16:50:08,140 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 16:50:08,716 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 16:50:09,224 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-18 16:50:09,521 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 25775
+WARNING 2024-11-18 16:53:29,737 log Not Found: /
+WARNING 2024-11-18 16:53:29,738 basehttp "GET / HTTP/1.1" 404 3407
+WARNING 2024-11-18 16:53:49,631 log Unauthorized: /users/register/
+WARNING 2024-11-18 16:53:49,631 basehttp "GET /users/register/ HTTP/1.1" 401 9399
+INFO 2024-11-18 16:53:49,693 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,732 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,735 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,736 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,737 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,738 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,739 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,739 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,739 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,740 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,741 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2024-11-18 16:53:49,902 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2024-11-18 17:17:27,813 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 17:17:28,348 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:17:58,867 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 17:17:59,389 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:18:06,969 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 17:18:07,433 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:18:22,330 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-18 17:18:22,819 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:23:58,388 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:23:58,941 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:24:01,398 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:24:01,912 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:24:03,371 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:24:03,901 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:24:14,588 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:24:15,123 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:24:17,569 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:24:18,077 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:24:21,552 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:24:22,089 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:24:23,520 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:24:24,062 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:24:25,374 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:24:25,919 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:24:58,570 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:24:59,115 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:25:01,438 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:25:01,946 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:25:03,404 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:25:03,938 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:27:27,002 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-18 17:27:27,530 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:27:33,042 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-18 17:27:33,604 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:27:38,116 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-18 17:27:38,641 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:27:40,066 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-18 17:27:40,606 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:27:47,170 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:27:47,698 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:27:50,167 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:27:50,669 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:28:04,544 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:28:05,051 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:28:07,497 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:28:07,982 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:28:09,417 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:28:09,934 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:28:11,400 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:28:11,938 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:28:28,979 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:28:29,480 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:28:38,127 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:28:38,629 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:28:40,073 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:28:40,566 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:28:42,021 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:28:42,505 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:28:45,989 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:28:46,506 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:28:51,997 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-18 17:28:52,497 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:29:07,387 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/models.py changed, reloading.
+INFO 2024-11-18 17:29:07,885 autoreload Watching for file changes with StatReloader
+INFO 2024-11-18 17:29:13,359 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/serializers.py changed, reloading.
+INFO 2024-11-18 17:29:13,832 autoreload Watching for file changes with StatReloader

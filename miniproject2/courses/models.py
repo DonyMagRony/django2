@@ -5,7 +5,7 @@ from students.models import Student
 class Course(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    instructor = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={'role': 'teacher'})
+    proffessor = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={'role': 'teacher'})
 
 class Enrollment(models.Model):
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
