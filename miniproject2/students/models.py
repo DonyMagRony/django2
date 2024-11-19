@@ -5,3 +5,6 @@ class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     dob = models.DateField()
     registration_date = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return self.user.username

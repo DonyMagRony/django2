@@ -418,3 +418,398 @@ INFO 2024-11-18 19:00:01,495 basehttp "GET /swagger/ HTTP/1.1" 200 2225
 INFO 2024-11-18 19:00:01,603 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 25885
 INFO 2024-11-18 19:00:39,089 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/serializers.py changed, reloading.
 INFO 2024-11-18 19:00:39,598 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 11:44:31,510 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 12:01:51,233 log Not Found: /users/register/
+WARNING 2024-11-19 12:01:51,953 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:01:52,573 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:01:52,885 log Not Found: /users/1/role/
+WARNING 2024-11-19 12:01:53,192 log Not Found: /users/1/role/
+INFO 2024-11-19 12:06:54,386 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:07:07,733 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 12:07:09,580 log Not Found: /
+WARNING 2024-11-19 12:07:09,580 basehttp "GET / HTTP/1.1" 404 3407
+WARNING 2024-11-19 12:07:09,633 log Not Found: /favicon.ico
+WARNING 2024-11-19 12:07:09,633 basehttp "GET /favicon.ico HTTP/1.1" 404 3458
+INFO 2024-11-19 12:07:14,688 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-19 12:07:14,709 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2024-11-19 12:07:14,716 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2024-11-19 12:07:14,717 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:07:14,717 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:07:14,720 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:07:14,720 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:07:14,721 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:07:14,906 views Fetching grades for user: AnonymousUser
+INFO 2024-11-19 12:07:14,908 views Fetching grades for user: AnonymousUser
+INFO 2024-11-19 12:07:14,910 views Fetching grades for user: AnonymousUser
+INFO 2024-11-19 12:07:14,912 views Fetching grades for user: AnonymousUser
+INFO 2024-11-19 12:07:14,944 views Fetching grades for user: AnonymousUser
+INFO 2024-11-19 12:07:14,960 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 26471
+INFO 2024-11-19 12:07:43,666 views New user registered: testuser (ID: 1)
+WARNING 2024-11-19 12:07:44,387 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:07:45,010 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:07:45,327 log Not Found: /users/1/role/
+WARNING 2024-11-19 12:07:45,642 log Not Found: /users/1/role/
+INFO 2024-11-19 12:11:47,100 views New user registered: testuser (ID: 1)
+WARNING 2024-11-19 12:11:47,821 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:11:48,438 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:11:48,752 log Not Found: /users/1/role/
+WARNING 2024-11-19 12:11:49,061 log Not Found: /users/1/role/
+INFO 2024-11-19 12:12:13,241 views New user registered: testuser (ID: 1)
+WARNING 2024-11-19 12:12:13,858 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:12:14,551 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:12:14,861 log Not Found: /users/1/role/
+WARNING 2024-11-19 12:12:15,164 log Not Found: /users/1/role/
+INFO 2024-11-19 12:13:00,556 views New user registered: testuser (ID: 1)
+WARNING 2024-11-19 12:13:01,164 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:13:01,865 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:13:02,173 log Not Found: /users/1/role/
+WARNING 2024-11-19 12:13:02,477 log Not Found: /users/1/role/
+INFO 2024-11-19 12:13:51,767 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 517830
+INFO 2024-11-19 12:13:51,770 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js.map HTTP/1.1" 200 1540070
+INFO 2024-11-19 12:13:51,772 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css.map HTTP/1.1" 200 251096
+INFO 2024-11-19 12:15:13,575 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/views.py changed, reloading.
+INFO 2024-11-19 12:15:14,164 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:15:30,097 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/views.py changed, reloading.
+INFO 2024-11-19 12:15:30,657 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:15:38,257 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/views.py changed, reloading.
+INFO 2024-11-19 12:15:38,802 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:15:41,223 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/views.py changed, reloading.
+INFO 2024-11-19 12:15:41,773 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 12:15:49,880 views New user registered: testuser (ID: 1)
+WARNING 2024-11-19 12:15:50,494 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:15:51,198 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:15:51,502 log Not Found: /users/1/role/
+WARNING 2024-11-19 12:15:51,825 log Not Found: /users/1/role/
+INFO 2024-11-19 12:16:28,605 basehttp "GET /admin/ HTTP/1.1" 200 14689
+INFO 2024-11-19 12:16:28,630 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:28,640 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:28,641 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:28,641 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:28,641 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:28,642 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:28,653 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:28,684 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:28,684 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,518 basehttp "GET /admin/users/user/ HTTP/1.1" 200 15297
+INFO 2024-11-19 12:16:32,544 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,554 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,555 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,557 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,558 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,558 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,560 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 12:16:32,568 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,568 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,570 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,617 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:32,659 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:34,444 basehttp "GET /admin/users/user/2/change/ HTTP/1.1" 200 31256
+INFO 2024-11-19 12:16:34,470 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:34,470 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:34,471 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:34,475 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 12:16:34,478 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:34,480 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:34,523 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:34,580 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-11-19 12:16:34,580 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+WARNING 2024-11-19 12:16:48,595 log Unauthorized: /users2/role/
+WARNING 2024-11-19 12:16:48,596 basehttp "PATCH /users2/role/ HTTP/1.1" 401 58
+INFO 2024-11-19 12:17:29,293 views New user registered: testuser (ID: 1)
+INFO 2024-11-19 12:17:29,902 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-19 12:17:30,516 log Not Found: /users/2/role/
+WARNING 2024-11-19 12:17:30,908 log Not Found: /users/1/role/
+WARNING 2024-11-19 12:17:31,211 log Not Found: /users/1/role/
+INFO 2024-11-19 12:17:53,001 views New user registered: testuser (ID: 1)
+INFO 2024-11-19 12:17:53,609 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-19 12:17:54,213 log Forbidden: /users2/role/
+INFO 2024-11-19 12:17:54,515 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-19 12:17:54,822 log Forbidden: /users1/role/
+WARNING 2024-11-19 12:28:34,861 log Bad Request: /courses/
+WARNING 2024-11-19 12:28:35,245 log Forbidden: /courses/
+WARNING 2024-11-19 12:28:35,541 log Bad Request: /courses/
+WARNING 2024-11-19 12:28:35,840 log Bad Request: /courses/
+INFO 2024-11-19 12:28:36,138 views Cache miss for courses list
+INFO 2024-11-19 12:31:44,500 views Cache miss for courses list
+INFO 2024-11-19 12:31:44,806 views Cache miss for courses list
+WARNING 2024-11-19 12:31:45,122 log Bad Request: /courses/
+WARNING 2024-11-19 12:31:45,514 log Forbidden: /courses/
+WARNING 2024-11-19 12:31:46,140 log Bad Request: /courses/1/
+INFO 2024-11-19 12:31:46,450 views Cache invalidated after updating a course
+INFO 2024-11-19 12:31:46,757 views Cache invalidated after deleting a course
+INFO 2024-11-19 12:31:47,063 views Cache miss for courses list
+WARNING 2024-11-19 12:31:47,677 log Bad Request: /courses/
+INFO 2024-11-19 12:34:34,284 views Cache miss for courses list
+INFO 2024-11-19 12:34:34,590 views Cache miss for courses list
+INFO 2024-11-19 12:34:35,201 views Cache invalidated after creating a course
+WARNING 2024-11-19 12:34:35,507 log Forbidden: /courses/
+WARNING 2024-11-19 12:34:36,115 log Bad Request: /courses/1/
+INFO 2024-11-19 12:34:36,510 views Cache invalidated after updating a course
+INFO 2024-11-19 12:34:36,816 views Cache invalidated after deleting a course
+INFO 2024-11-19 12:34:37,119 views Cache miss for courses list
+WARNING 2024-11-19 12:34:37,730 log Bad Request: /courses/
+INFO 2024-11-19 12:36:51,137 views Cache miss for courses list
+INFO 2024-11-19 12:36:51,443 views Cache miss for courses list
+INFO 2024-11-19 12:36:52,054 views Cache invalidated after creating a course
+WARNING 2024-11-19 12:36:52,357 log Forbidden: /courses/
+INFO 2024-11-19 12:36:53,293 views Cache invalidated after updating a course
+INFO 2024-11-19 12:36:53,639 views Cache invalidated after updating a course
+INFO 2024-11-19 12:36:53,959 views Cache invalidated after deleting a course
+INFO 2024-11-19 12:36:54,295 views Cache miss for courses list
+WARNING 2024-11-19 12:36:55,067 log Bad Request: /courses/
+INFO 2024-11-19 12:38:14,493 views Cache miss for courses list
+INFO 2024-11-19 12:38:14,804 views Cache miss for courses list
+INFO 2024-11-19 12:38:15,416 views Cache invalidated after creating a course
+WARNING 2024-11-19 12:38:15,721 log Forbidden: /courses/
+INFO 2024-11-19 12:38:16,663 views Cache invalidated after updating a course
+INFO 2024-11-19 12:38:16,971 views Cache invalidated after updating a course
+INFO 2024-11-19 12:38:17,279 views Cache invalidated after deleting a course
+INFO 2024-11-19 12:38:17,894 views Cache miss for courses list
+INFO 2024-11-19 12:38:18,594 views Cache invalidated after creating a course
+WARNING 2024-11-19 12:38:18,595 log Forbidden: /courses/
+INFO 2024-11-19 12:40:49,514 views Cache miss for courses list
+INFO 2024-11-19 12:40:49,820 views Cache miss for courses list
+INFO 2024-11-19 12:40:50,429 views Cache invalidated after creating a course
+WARNING 2024-11-19 12:40:50,732 log Forbidden: /courses/
+INFO 2024-11-19 12:40:51,640 views Cache invalidated after updating a course
+INFO 2024-11-19 12:40:51,945 views Cache invalidated after updating a course
+INFO 2024-11-19 12:40:52,249 views Cache invalidated after deleting a course
+WARNING 2024-11-19 12:40:52,548 log Bad Request: /courses/
+INFO 2024-11-19 12:40:53,232 views Cache invalidated after creating a course
+WARNING 2024-11-19 12:40:53,233 log Forbidden: /courses/
+INFO 2024-11-19 12:41:50,463 views Cache miss for courses list
+INFO 2024-11-19 12:41:50,772 views Cache miss for courses list
+INFO 2024-11-19 12:41:51,393 views Cache invalidated after creating a course
+WARNING 2024-11-19 12:41:51,704 log Forbidden: /courses/
+INFO 2024-11-19 12:41:52,612 views Cache invalidated after updating a course
+INFO 2024-11-19 12:41:52,913 views Cache invalidated after updating a course
+INFO 2024-11-19 12:41:53,219 views Cache invalidated after deleting a course
+INFO 2024-11-19 12:41:53,815 views Cache invalidated after creating a course
+INFO 2024-11-19 12:41:53,816 views Cache miss for courses list
+INFO 2024-11-19 12:41:53,819 views Cache hit for courses list
+WARNING 2024-11-19 12:41:53,821 log Bad Request: /courses/1/
+INFO 2024-11-19 12:41:54,509 views Cache invalidated after creating a course
+WARNING 2024-11-19 12:41:54,510 log Forbidden: /courses/
+INFO 2024-11-19 12:42:23,624 views Cache miss for courses list
+INFO 2024-11-19 12:42:23,931 views Cache miss for courses list
+INFO 2024-11-19 12:42:24,536 views Cache invalidated after creating a course
+WARNING 2024-11-19 12:42:24,841 log Forbidden: /courses/
+INFO 2024-11-19 12:42:25,752 views Cache invalidated after updating a course
+INFO 2024-11-19 12:42:26,054 views Cache invalidated after updating a course
+INFO 2024-11-19 12:42:26,358 views Cache invalidated after deleting a course
+INFO 2024-11-19 12:42:26,959 views Cache invalidated after creating a course
+INFO 2024-11-19 12:42:26,960 views Cache miss for courses list
+INFO 2024-11-19 12:42:26,962 views Cache hit for courses list
+INFO 2024-11-19 12:42:26,965 views Cache invalidated after updating a course
+INFO 2024-11-19 12:42:26,967 views Cache miss for courses list
+INFO 2024-11-19 12:42:27,572 views Cache invalidated after creating a course
+WARNING 2024-11-19 12:42:27,573 log Forbidden: /courses/
+INFO 2024-11-19 13:15:36,823 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-19 13:15:37,439 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:17:06,523 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-19 13:17:07,110 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:34:02,049 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-19 13:34:02,642 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:35:24,266 basehttp "GET /admin/django_celery_beat/solarschedule/ HTTP/1.1" 200 13881
+INFO 2024-11-19 13:35:24,302 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:35:25,643 basehttp "GET /admin/django_celery_beat/crontabschedule/ HTTP/1.1" 200 13865
+INFO 2024-11-19 13:35:25,664 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:35:27,056 basehttp "GET /admin/django_celery_beat/intervalschedule/ HTTP/1.1" 200 13872
+INFO 2024-11-19 13:35:27,090 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:35:28,326 basehttp "GET /admin/token_blacklist/blacklistedtoken/ HTTP/1.1" 200 16679
+INFO 2024-11-19 13:35:28,360 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:35:28,363 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-11-19 13:35:28,432 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-11-19 13:35:30,659 basehttp "GET /admin/token_blacklist/outstandingtoken/ HTTP/1.1" 200 15269
+INFO 2024-11-19 13:35:32,639 basehttp "GET /admin/users/user/ HTTP/1.1" 200 15297
+INFO 2024-11-19 13:35:32,672 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:35:49,588 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/students/admin.py changed, reloading.
+INFO 2024-11-19 13:35:50,161 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:36:01,624 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/students/admin.py changed, reloading.
+INFO 2024-11-19 13:36:02,136 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:36:04,449 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/students/admin.py changed, reloading.
+INFO 2024-11-19 13:36:04,972 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:36:06,287 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/students/admin.py changed, reloading.
+INFO 2024-11-19 13:36:06,834 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:36:09,150 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/students/admin.py changed, reloading.
+INFO 2024-11-19 13:36:09,689 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:36:23,344 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:36:24,444 basehttp "GET /admin/users/user/ HTTP/1.1" 200 15965
+INFO 2024-11-19 13:36:24,470 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:36:26,777 basehttp "GET /admin/students/student/ HTTP/1.1" 200 14481
+INFO 2024-11-19 13:36:26,811 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:36:28,320 basehttp "GET /admin/students/student/add/ HTTP/1.1" 200 17077
+INFO 2024-11-19 13:36:28,344 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:36:28,356 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-11-19 13:36:34,717 basehttp "POST /admin/students/student/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 13:36:34,746 basehttp "GET /admin/students/student/ HTTP/1.1" 200 15999
+INFO 2024-11-19 13:36:34,821 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:36:34,879 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-11-19 13:36:58,668 basehttp "GET /admin/attendance/attendance/ HTTP/1.1" 200 14510
+INFO 2024-11-19 13:36:58,702 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:36:59,584 basehttp "GET /admin/attendance/attendance/add/ HTTP/1.1" 200 19533
+INFO 2024-11-19 13:36:59,616 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:37:09,460 basehttp "GET /admin/courses/course/add/ HTTP/1.1" 200 17544
+INFO 2024-11-19 13:37:09,480 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:37:20,021 basehttp "GET /admin/users/user/ HTTP/1.1" 200 15965
+INFO 2024-11-19 13:37:20,057 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:37:21,886 basehttp "GET /admin/users/user/add/ HTTP/1.1" 200 31595
+INFO 2024-11-19 13:37:21,906 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:37:29,071 basehttp "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 2455
+INFO 2024-11-19 13:37:43,814 basehttp "POST /admin/users/user/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 13:37:43,840 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16419
+INFO 2024-11-19 13:37:43,904 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:37:50,843 basehttp "GET /admin/courses/course/ HTTP/1.1" 200 14470
+INFO 2024-11-19 13:37:50,874 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:37:52,318 basehttp "GET /admin/courses/course/add/ HTTP/1.1" 200 17582
+INFO 2024-11-19 13:37:52,350 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:38:00,309 basehttp "POST /admin/courses/course/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 13:38:00,334 basehttp "GET /admin/courses/course/ HTTP/1.1" 200 15978
+INFO 2024-11-19 13:38:00,404 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:38:02,630 basehttp "GET /admin/courses/enrollment/ HTTP/1.1" 200 14498
+INFO 2024-11-19 13:38:02,661 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:38:03,961 basehttp "GET /admin/courses/enrollment/add/ HTTP/1.1" 200 18084
+INFO 2024-11-19 13:38:03,993 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:38:07,092 basehttp "POST /admin/courses/enrollment/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 13:38:07,118 basehttp "GET /admin/courses/enrollment/ HTTP/1.1" 200 16038
+INFO 2024-11-19 13:38:07,192 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:38:10,296 basehttp "GET /admin/attendance/attendance/ HTTP/1.1" 200 14510
+INFO 2024-11-19 13:38:10,327 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:38:11,680 basehttp "GET /admin/attendance/attendance/add/ HTTP/1.1" 200 19581
+INFO 2024-11-19 13:38:11,716 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:38:19,071 basehttp "POST /admin/attendance/attendance/add/ HTTP/1.1" 200 19763
+INFO 2024-11-19 13:38:19,105 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:38:22,934 basehttp "POST /admin/attendance/attendance/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 13:38:22,961 basehttp "GET /admin/attendance/attendance/ HTTP/1.1" 200 16056
+INFO 2024-11-19 13:38:23,034 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:38:26,939 basehttp "GET /admin/students/student/ HTTP/1.1" 200 15785
+INFO 2024-11-19 13:38:26,969 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-11-19 13:38:43,478 log Not Found: /login
+WARNING 2024-11-19 13:38:43,478 basehttp "GET /login HTTP/1.1" 404 3440
+WARNING 2024-11-19 13:38:50,686 log Not Found: /auth/login
+WARNING 2024-11-19 13:38:50,687 basehttp "GET /auth/login HTTP/1.1" 404 11143
+INFO 2024-11-19 13:38:59,827 basehttp "GET /auth/users/login HTTP/1.1" 301 0
+WARNING 2024-11-19 13:38:59,844 log Unauthorized: /auth/users/login/
+WARNING 2024-11-19 13:38:59,844 basehttp "GET /auth/users/login/ HTTP/1.1" 401 5327
+INFO 2024-11-19 13:38:59,870 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,880 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,880 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,880 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,881 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,881 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,882 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,892 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,892 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,893 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,893 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2024-11-19 13:38:59,944 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2024-11-19 13:39:04,141 log Unauthorized: /auth/users/login/
+WARNING 2024-11-19 13:39:04,142 basehttp "GET /auth/users/login/ HTTP/1.1" 401 5327
+WARNING 2024-11-19 13:39:08,742 log Unauthorized: /auth/users/
+WARNING 2024-11-19 13:39:08,743 basehttp "GET /auth/users/ HTTP/1.1" 401 9304
+INFO 2024-11-19 13:39:21,660 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16225
+INFO 2024-11-19 13:39:21,688 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:39:23,287 basehttp "GET /admin/users/user/2/change/ HTTP/1.1" 200 31924
+INFO 2024-11-19 13:39:23,319 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:39:32,247 basehttp "POST /admin/users/user/2/change/ HTTP/1.1" 200 32023
+INFO 2024-11-19 13:39:32,282 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:39:37,824 basehttp "POST /admin/users/user/2/change/ HTTP/1.1" 302 0
+INFO 2024-11-19 13:39:37,839 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16418
+INFO 2024-11-19 13:39:37,915 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-11-19 13:39:43,914 log Bad Request: /auth/users/
+WARNING 2024-11-19 13:39:43,914 basehttp "POST /auth/users/ HTTP/1.1" 400 10976
+INFO 2024-11-19 13:39:49,696 basehttp "GET /admin/users/user/3/change/ HTTP/1.1" 200 31869
+INFO 2024-11-19 13:39:49,727 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:39:59,262 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16225
+INFO 2024-11-19 13:39:59,293 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2024-11-19 13:40:08,566 log Bad Request: /auth/users/
+WARNING 2024-11-19 13:40:08,566 basehttp "POST /auth/users/ HTTP/1.1" 400 10930
+WARNING 2024-11-19 13:42:15,493 log Not Found: /api/v1/users/activation/
+WARNING 2024-11-19 13:42:15,494 basehttp "GET /api/v1/users/activation/ HTTP/1.1" 404 3497
+WARNING 2024-11-19 13:42:22,021 log Not Found: /auth/v1/users/activation/
+WARNING 2024-11-19 13:42:22,021 basehttp "GET /auth/v1/users/activation/ HTTP/1.1" 404 11188
+WARNING 2024-11-19 13:42:25,596 log Unauthorized: /auth/users/activation/
+WARNING 2024-11-19 13:42:25,597 basehttp "GET /auth/users/activation/ HTTP/1.1" 401 7736
+WARNING 2024-11-19 13:42:36,608 log Unauthorized: /auth/users/register/
+WARNING 2024-11-19 13:42:36,609 basehttp "GET /auth/users/register/ HTTP/1.1" 401 5342
+WARNING 2024-11-19 13:42:50,913 log Unauthorized: /auth/users/register/
+WARNING 2024-11-19 13:42:50,913 basehttp "GET /auth/users/register/?format=json HTTP/1.1" 401 58
+WARNING 2024-11-19 13:42:53,202 log Unauthorized: /auth/users/register/
+WARNING 2024-11-19 13:42:53,202 basehttp "GET /auth/users/register/ HTTP/1.1" 401 5342
+WARNING 2024-11-19 13:42:57,196 log Unauthorized: /auth/users/
+WARNING 2024-11-19 13:42:57,197 basehttp "GET /auth/users/ HTTP/1.1" 401 9304
+WARNING 2024-11-19 13:42:58,146 log Unauthorized: /auth/
+WARNING 2024-11-19 13:42:58,147 basehttp "GET /auth/ HTTP/1.1" 401 5014
+WARNING 2024-11-19 13:42:58,391 log Unauthorized: /auth/
+WARNING 2024-11-19 13:42:58,392 basehttp "GET /auth/ HTTP/1.1" 401 5014
+WARNING 2024-11-19 13:43:25,064 log Bad Request: /auth/users/
+WARNING 2024-11-19 13:43:25,065 basehttp "POST /auth/users/ HTTP/1.1" 400 83
+INFO 2024-11-19 13:43:40,639 basehttp "POST /auth/users/ HTTP/1.1" 201 65
+INFO 2024-11-19 13:44:29,520 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16503
+INFO 2024-11-19 13:44:29,538 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:45:05,190 basehttp "GET /admin/users/user/4/change/ HTTP/1.1" 200 31975
+INFO 2024-11-19 13:45:05,221 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:45:36,149 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-11-19 13:46:29,350 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-19 13:46:29,932 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:46:33,558 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-19 13:46:34,113 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:46:36,711 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-19 13:46:37,280 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:46:45,476 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:48:56,486 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/attendance/serializers.py changed, reloading.
+INFO 2024-11-19 13:48:57,043 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:49:00,666 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/attendance/serializers.py changed, reloading.
+INFO 2024-11-19 13:49:01,241 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:49:05,800 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 13:54:28,705 basehttp "GET /admin/users/user/4/change/ HTTP/1.1" 200 31975
+INFO 2024-11-19 13:54:28,730 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:54:33,380 basehttp "POST /admin/users/user/4/change/ HTTP/1.1" 302 0
+INFO 2024-11-19 13:54:33,399 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16708
+INFO 2024-11-19 13:54:33,472 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:54:36,280 basehttp "GET /admin/students/student/ HTTP/1.1" 200 15785
+INFO 2024-11-19 13:54:36,303 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:54:38,397 basehttp "GET /admin/students/student/ HTTP/1.1" 200 15785
+INFO 2024-11-19 13:54:38,425 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:54:39,733 basehttp "GET /admin/students/student/1/change/ HTTP/1.1" 200 17426
+INFO 2024-11-19 13:54:39,753 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 13:57:27,376 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/students/models.py changed, reloading.
+INFO 2024-11-19 13:57:28,018 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 15:34:57,886 views Cache miss for courses list
+INFO 2024-11-19 15:34:58,194 views Cache miss for courses list
+INFO 2024-11-19 15:34:58,800 views Cache invalidated after creating a course
+WARNING 2024-11-19 15:34:59,108 log Forbidden: /courses/
+INFO 2024-11-19 15:35:00,018 views Cache invalidated after updating a course
+INFO 2024-11-19 15:35:00,320 views Cache invalidated after updating a course
+INFO 2024-11-19 15:35:00,648 views Cache invalidated after deleting a course
+INFO 2024-11-19 15:35:01,252 views Cache invalidated after creating a course
+INFO 2024-11-19 15:35:01,254 views Cache miss for courses list
+INFO 2024-11-19 15:35:01,256 views Cache hit for courses list
+INFO 2024-11-19 15:35:01,259 views Cache invalidated after updating a course
+INFO 2024-11-19 15:35:01,261 views Cache miss for courses list
+INFO 2024-11-19 15:35:01,866 views Cache invalidated after creating a course
+WARNING 2024-11-19 15:35:01,867 log Forbidden: /courses/
+INFO 2024-11-19 15:35:03,113 views New user registered: testuser (ID: 1)
+INFO 2024-11-19 15:35:03,718 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-19 15:35:04,321 log Forbidden: /users2/role/
+INFO 2024-11-19 15:35:04,625 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-19 15:35:04,925 log Forbidden: /users1/role/
+INFO 2024-11-19 15:43:01,402 views Cache miss for courses list
+INFO 2024-11-19 15:43:01,708 views Cache miss for courses list
+INFO 2024-11-19 15:43:02,312 views Cache invalidated after creating a course
+WARNING 2024-11-19 15:43:02,613 log Forbidden: /courses/
+INFO 2024-11-19 15:43:03,514 views Cache invalidated after updating a course
+INFO 2024-11-19 15:43:03,813 views Cache invalidated after updating a course
+INFO 2024-11-19 15:43:04,115 views Cache invalidated after deleting a course
+INFO 2024-11-19 15:43:04,716 views Cache invalidated after creating a course
+INFO 2024-11-19 15:43:04,717 views Cache miss for courses list
+INFO 2024-11-19 15:43:04,719 views Cache hit for courses list
+INFO 2024-11-19 15:43:04,722 views Cache invalidated after updating a course
+INFO 2024-11-19 15:43:04,723 views Cache miss for courses list
+INFO 2024-11-19 15:43:05,322 views Cache invalidated after creating a course
+WARNING 2024-11-19 15:43:05,323 log Forbidden: /courses/
+INFO 2024-11-19 15:43:06,578 views New user registered: testuser (ID: 1)
+INFO 2024-11-19 15:43:07,181 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-19 15:43:07,777 log Forbidden: /users2/role/
+INFO 2024-11-19 15:43:08,073 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-19 15:43:08,375 log Forbidden: /users1/role/

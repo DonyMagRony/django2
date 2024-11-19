@@ -17,7 +17,6 @@ from attendance.models import Attendance
 from grades.models import Grade
 from students.models import Student
 
-
 @shared_task
 def send_daily_attendance_reminder():
     """
@@ -25,18 +24,19 @@ def send_daily_attendance_reminder():
 
     This task is executed every day using Celery Beat.
     """
-    students = Student.objects.all()
+    students = Student.objects.select_related('user').all()  # Optimize query with select_related
     for student in students:
         send_mail(
             subject='Daily Attendance Reminder',
             message='Please remember to mark your attendance today.',
             from_email='admin@school.com',
-            recipient_list=[student.email],
+            recipient_list=[student.user.email],  # Fetch email from the related User
         )
 
 
+
 @shared_task
-def notify_grade_update(student_id, course_name, grade):
+def notify_grade_update(student, course_name, grade):
     """
     Sends an email notification to a student when their grade is updated.
 
@@ -45,12 +45,12 @@ def notify_grade_update(student_id, course_name, grade):
         course_name (str): Name of the course.
         grade (str): Updated grade for the course.
     """
-    student = Student.objects.get(id=student_id)
+    student = Student.objects.get(id=student.id)
     send_mail(
         subject='Grade Update Notification',
         message=f'Your grade for {course_name} has been updated to: {grade}.',
         from_email='admin@school.com',
-        recipient_list=[student.email],
+        recipient_list=[student.user.email],
     )
 
 
@@ -76,6 +76,7 @@ def daily_report_summary():
     )
 
 
+
 @shared_task
 def weekly_performance_summary():
     """
@@ -86,13 +87,18 @@ def weekly_performance_summary():
     for student in students:
         grades = Grade.objects.filter(student=student)
         attendance = Attendance.objects.filter(student=student)
-        
+
+        # Format date explicitly for consistency
+        attendance_data = list(attendance.values('date', 'status'))
+        for record in attendance_data:
+            record['date'] = record['date'].strftime('%Y-%m-%d')  # Format date as string
+
         send_mail(
             subject='Weekly Performance Summary',
             message=(
                 f"Your grades:\n{list(grades.values('course__name', 'grade'))}\n"
-                f"Your attendance:\n{list(attendance.values('date', 'status'))}"
+                f"Your attendance:\n{attendance_data}"
             ),
             from_email='admin@school.com',
-            recipient_list=[student.email],
+            recipient_list=[student.user.email],
         )

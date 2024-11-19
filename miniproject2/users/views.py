@@ -2,6 +2,8 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+
+from users.serializers import CustomUserSerializer
 from .models import User
 from djoser.views import UserViewSet  # Import the Djoser UserViewSet
 
@@ -9,7 +11,9 @@ from djoser.views import UserViewSet  # Import the Djoser UserViewSet
 import logging
 logger = logging.getLogger('app_logger')  # Use the custom logger defined in settings
 
-class CustomUserViewSet(UserViewSet):
+class CustomUserViewSet(UserViewSet):   
+    serializer_class = CustomUserSerializer
+
     def perform_create(self, serializer):
         user = serializer.save()
         logger.info(f"New user registered: {user.username} (ID: {user.id})")

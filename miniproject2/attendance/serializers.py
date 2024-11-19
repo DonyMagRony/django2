@@ -1,6 +1,6 @@
+# attendance/serializers.py
+from rest_framework import serializers  # Ensure this is the correct import
 from attendance.models import Attendance
-from students import serializers
-
 
 class AttendanceSerializer(serializers.ModelSerializer):
     class Meta:

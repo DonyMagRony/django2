@@ -28,7 +28,7 @@ urlpatterns = [
     path('students/', include('students.urls')),
     path('courses/', include('courses.urls')),
     path('grades/', include('grades.urls')),
-
+    path('attendance/', include('attendance.urls')),
     # Swagger and ReDoc
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
