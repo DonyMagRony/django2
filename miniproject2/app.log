@@ -813,3 +813,63 @@ INFO 2024-11-19 15:43:07,181 views User role updated: testuser (ID: 2) - student
 WARNING 2024-11-19 15:43:07,777 log Forbidden: /users2/role/
 INFO 2024-11-19 15:43:08,073 views User role updated: admin (ID: 1) - admin → teacher
 WARNING 2024-11-19 15:43:08,375 log Forbidden: /users1/role/
+INFO 2024-11-20 06:15:28,255 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 06:15:28,867 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 06:15:29,475 log Forbidden: /users2/role/
+INFO 2024-11-20 06:15:29,775 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 06:15:30,075 log Forbidden: /users1/role/
+WARNING 2024-11-20 06:15:30,391 log Not Found: /auth/token/login/
+INFO 2024-11-20 06:16:42,501 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-20 06:16:45,714 log Not Found: /
+WARNING 2024-11-20 06:16:45,715 basehttp "GET / HTTP/1.1" 404 3561
+WARNING 2024-11-20 06:16:45,913 log Not Found: /favicon.ico
+WARNING 2024-11-20 06:16:45,914 basehttp "GET /favicon.ico HTTP/1.1" 404 3612
+INFO 2024-11-20 06:16:49,547 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-20 06:16:49,679 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2024-11-20 06:16:49,775 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2024-11-20 06:16:49,776 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2024-11-20 06:16:49,778 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2024-11-20 06:16:49,779 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2024-11-20 06:16:49,781 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2024-11-20 06:16:49,785 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2024-11-20 06:16:49,995 views Fetching grades for user: AnonymousUser
+INFO 2024-11-20 06:16:49,998 views Fetching grades for user: AnonymousUser
+INFO 2024-11-20 06:16:50,001 views Fetching grades for user: AnonymousUser
+INFO 2024-11-20 06:16:50,004 views Fetching grades for user: AnonymousUser
+INFO 2024-11-20 06:16:50,046 views Fetching grades for user: AnonymousUser
+INFO 2024-11-20 06:16:50,067 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 30472
+INFO 2024-11-20 06:17:33,395 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 06:17:33,998 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 06:17:34,595 log Forbidden: /users2/role/
+INFO 2024-11-20 06:17:34,894 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 06:17:35,195 log Forbidden: /users1/role/
+INFO 2024-11-20 06:19:16,549 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 06:19:17,153 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 06:19:17,757 log Forbidden: /users2/role/
+INFO 2024-11-20 06:19:18,058 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 06:19:18,357 log Forbidden: /users1/role/
+INFO 2024-11-20 06:20:38,585 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 06:20:39,185 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 06:20:39,786 log Forbidden: /users2/role/
+INFO 2024-11-20 06:20:40,084 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 06:20:40,383 log Forbidden: /users1/role/
+INFO 2024-11-20 06:21:49,305 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 06:21:49,910 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 06:21:50,510 log Forbidden: /users2/role/
+INFO 2024-11-20 06:21:50,811 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 06:21:51,112 log Forbidden: /users1/role/
+INFO 2024-11-20 06:26:52,100 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 06:26:52,702 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 06:26:53,306 log Forbidden: /users2/role/
+INFO 2024-11-20 06:26:53,607 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 06:26:53,912 log Forbidden: /users1/role/
+INFO 2024-11-20 06:27:43,005 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 06:27:43,608 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 06:27:44,203 log Forbidden: /users2/role/
+INFO 2024-11-20 06:27:44,502 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 06:27:44,801 log Forbidden: /users1/role/
+INFO 2024-11-20 06:28:18,547 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 06:28:19,161 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 06:28:19,777 log Forbidden: /users2/role/
+INFO 2024-11-20 06:28:20,075 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 06:28:20,383 log Forbidden: /users1/role/

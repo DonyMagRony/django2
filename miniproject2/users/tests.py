@@ -88,3 +88,31 @@ def test_non_admin_cannot_access_update_role():
     client.force_authenticate(user=non_admin_user)
     response = client.patch("/users1/role/", {"role": "teacher"})
     assert response.status_code == 403
+
+    
+@pytest.mark.django_db
+def test_user_login():
+    client = APIClient()
+    
+    # Create a test user
+    user = User.objects.create_user(username="testuser", email="testuser@example.com", password="securepassword", role="student")
+    
+    # Data for login
+    login_data = {
+        "username": "testuser",
+        "password": "securepassword"
+    }
+    
+    # Send a POST request to the login endpoint
+    response = client.post("/auth/jwt/create/", data=login_data)
+    # Assert response status is 200 OK
+    assert response.status_code == 200, f"Unexpected response code: {response.status_code}"
+    
+    # Assert the response contains "access" and "refresh" keys
+    assert "access" in response.data, "Login did not return an access token"
+    assert "refresh" in response.data, "Login did not return a refresh token"
+    
+    # Assert the tokens are not empty
+    assert response.data["access"] is not None, "Access token is empty"
+    assert response.data["refresh"] is not None, "Refresh token is empty"
+    
