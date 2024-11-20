@@ -1,7 +1,7 @@
 import logging
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated ,OR
 from .models import Grade
 from .serializers import GradeSerializer
 from users.permissions import IsStudent, IsTeacher, IsAdmin
@@ -28,7 +28,7 @@ class GradeViewSet(viewsets.ModelViewSet):
         """
         logger.info(f"Assigning permissions for action: {self.action}")
         if self.action in ['create', 'update', 'partial_update', 'destroy']:
-            return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            return [OR(IsTeacher(), IsAdmin())]  # Only teachers or admins can modify grades
         elif self.action in ['list', 'retrieve']:
             return [IsAuthenticated()]  # Allow authenticated users to view
         return super().get_permissions()
@@ -62,15 +62,6 @@ class GradeViewSet(viewsets.ModelViewSet):
         user = request.user
         logger.info(f"User {user} is attempting to create a grade.")
 
-        # Ensure the user is a teacher
-        if not IsTeacher().has_permission(request, self):
-            logger.error(f"User {user} is not authorized to create grades.")
-            return Response(
-                {"error": "Only teachers can create grades."},
-                status=status.HTTP_403_FORBIDDEN
-            )
-
-        # Validate the course
         data = request.data
         try:
             course = Course.objects.get(id=data['course'])
@@ -81,10 +72,24 @@ class GradeViewSet(viewsets.ModelViewSet):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-        if course.professor != user:
-            logger.error(f"User {user} does not teach the course {course}.")
+    # Check if the user is a teacher
+        if IsTeacher().has_permission(request, self):
+            # If the user is a teacher, check if they are the course professor
+            if course.professor != user:
+                logger.error(f"User {user} does not teach the course {course}.")
+                return Response(
+                    {"error": "You can only grade students in courses you teach."},
+                    status=status.HTTP_403_FORBIDDEN
+                )
+        # Check if the user is an admin
+        elif IsAdmin().has_permission(request, self):
+            # Admins can grade in any course, so no further checks needed
+            pass
+        else:
+            # If neither teacher nor admin, reject the request
+            logger.error(f"User {request.user} is not authorized to create grades.")
             return Response(
-                {"error": "You can only grade students in courses you teach."},
+                {"error": "Only teachers or admins can create grades."},
                 status=status.HTTP_403_FORBIDDEN
             )
 

@@ -1070,3 +1070,2266 @@ WARNING 2024-11-19 18:44:27,054 log Forbidden: /users1/role/
 INFO 2024-11-19 18:47:32,618 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 18:55:04,236 autoreload Watching for file changes with StatReloader
 INFO 2024-11-19 19:23:19,560 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 08:14:13,333 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 08:14:34,647 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-20 08:14:35,244 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 08:14:36,839 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-20 08:14:44,409 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 08:31:51,338 views Cache miss for courses list
+INFO 2024-11-20 08:31:51,643 views Cache miss for courses list
+INFO 2024-11-20 08:31:52,246 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:31:52,546 log Forbidden: /courses/
+INFO 2024-11-20 08:31:53,466 views Cache invalidated after updating a course
+INFO 2024-11-20 08:31:53,768 views Cache invalidated after updating a course
+ERROR 2024-11-20 08:31:54,076 log Internal Server Error: /courses/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: course_popularity
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 91, in destroy
+    self.perform_destroy(instance)
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py", line 74, in perform_destroy
+    super().perform_destroy(instance)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 95, in perform_destroy
+    instance.delete()
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 1272, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/deletion.py", line 468, in delete
+    count = qs._raw_delete(using=self.using)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1210, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: course_popularity
+INFO 2024-11-20 08:31:54,942 views Cache invalidated after creating a course
+INFO 2024-11-20 08:31:54,944 views Cache miss for courses list
+INFO 2024-11-20 08:31:54,947 views Cache hit for courses list
+INFO 2024-11-20 08:31:54,950 views Cache invalidated after updating a course
+INFO 2024-11-20 08:31:54,952 views Cache miss for courses list
+INFO 2024-11-20 08:31:55,552 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:31:55,553 log Forbidden: /courses/
+WARNING 2024-11-20 08:31:57,941 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:31:59,128 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:32:00,317 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:32:01,510 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:32:02,711 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:32:03,604 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:32:04,520 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:32:05,429 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:32:06,337 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:32:07,240 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:32:08,148 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:32:09,052 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:32:09,991 log Too Many Requests: /usersregister/
+INFO 2024-11-20 08:32:10,597 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 08:32:11,195 log Forbidden: /users2/role/
+INFO 2024-11-20 08:32:11,499 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 08:32:11,801 log Forbidden: /users1/role/
+WARNING 2024-11-20 08:32:40,071 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:32:41,066 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:32:41,969 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 08:32:50,120 views Cache miss for courses list
+INFO 2024-11-20 08:32:50,424 views Cache miss for courses list
+INFO 2024-11-20 08:32:51,028 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:32:51,328 log Forbidden: /courses/
+WARNING 2024-11-20 08:32:51,631 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:32:52,321 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:32:52,625 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:32:52,929 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:32:53,531 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:32:54,141 log Too Many Requests: /courses/
+INFO 2024-11-20 08:33:30,309 views Cache miss for courses list
+INFO 2024-11-20 08:33:30,610 views Cache miss for courses list
+INFO 2024-11-20 08:33:31,207 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:33:31,509 log Forbidden: /courses/
+INFO 2024-11-20 08:33:32,413 views Cache invalidated after updating a course
+INFO 2024-11-20 08:33:32,718 views Cache invalidated after updating a course
+ERROR 2024-11-20 08:33:33,028 log Internal Server Error: /courses/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: course_popularity
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 91, in destroy
+    self.perform_destroy(instance)
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py", line 74, in perform_destroy
+    super().perform_destroy(instance)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 95, in perform_destroy
+    instance.delete()
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 1272, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/deletion.py", line 468, in delete
+    count = qs._raw_delete(using=self.using)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1210, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: course_popularity
+WARNING 2024-11-20 08:33:33,872 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:33:34,477 log Too Many Requests: /courses/
+INFO 2024-11-20 08:34:10,734 views Cache miss for courses list
+INFO 2024-11-20 08:34:11,035 views Cache miss for courses list
+INFO 2024-11-20 08:34:11,634 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:34:11,938 log Forbidden: /courses/
+WARNING 2024-11-20 08:34:12,237 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:34:12,926 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:34:13,227 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:34:13,528 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:34:14,125 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:34:14,721 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:34:21,171 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:34:21,561 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:34:22,162 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:34:22,461 log Forbidden: /courses/
+WARNING 2024-11-20 08:34:22,762 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:34:23,363 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:34:23,667 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:34:23,972 log Too Many Requests: /courses/1/
+WARNING 2024-11-20 08:34:24,573 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:34:25,176 log Too Many Requests: /courses/
+INFO 2024-11-20 08:34:52,839 views Cache miss for courses list
+INFO 2024-11-20 08:34:53,143 views Cache miss for courses list
+INFO 2024-11-20 08:34:53,786 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:34:54,087 log Forbidden: /courses/
+INFO 2024-11-20 08:34:54,994 views Cache invalidated after updating a course
+INFO 2024-11-20 08:34:55,307 views Cache invalidated after updating a course
+INFO 2024-11-20 08:34:55,621 views Cache invalidated after deleting a course
+WARNING 2024-11-20 08:34:56,245 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:34:56,967 log Too Many Requests: /courses/
+INFO 2024-11-20 08:36:35,788 views Cache miss for courses list
+INFO 2024-11-20 08:36:36,088 views Cache miss for courses list
+INFO 2024-11-20 08:36:36,730 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:36:37,030 log Forbidden: /courses/
+INFO 2024-11-20 08:36:37,931 views Cache invalidated after updating a course
+INFO 2024-11-20 08:36:38,236 views Cache invalidated after updating a course
+INFO 2024-11-20 08:36:38,540 views Cache invalidated after deleting a course
+INFO 2024-11-20 08:36:39,139 views Cache invalidated after creating a course
+INFO 2024-11-20 08:36:39,140 views Cache miss for courses list
+INFO 2024-11-20 08:36:39,143 views Cache hit for courses list
+INFO 2024-11-20 08:36:39,147 views Cache invalidated after updating a course
+INFO 2024-11-20 08:36:39,148 views Cache miss for courses list
+INFO 2024-11-20 08:36:39,745 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:36:39,746 log Forbidden: /courses/
+INFO 2024-11-20 08:38:25,036 views Cache miss for courses list
+INFO 2024-11-20 08:38:25,341 views Cache miss for courses list
+INFO 2024-11-20 08:38:25,943 views Cache invalidated after creating a course
+ERROR 2024-11-20 08:38:25,949 log Internal Server Error: /courses/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/analytics/middleware.py", line 16, in __call__
+    ApiRequestLog.objects.create(
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/fields/related_descriptors.py", line 306, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: admin>": the current database router prevents this relation.
+ERROR 2024-11-20 08:38:26,450 log Internal Server Error: /courses/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/analytics/middleware.py", line 16, in __call__
+    ApiRequestLog.objects.create(
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/fields/related_descriptors.py", line 306, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: teacher>": the current database router prevents this relation.
+INFO 2024-11-20 08:38:27,447 views Cache invalidated after updating a course
+INFO 2024-11-20 08:38:27,746 views Cache invalidated after updating a course
+ERROR 2024-11-20 08:38:28,048 log Internal Server Error: /courses/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: course_popularity
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 91, in destroy
+    self.perform_destroy(instance)
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py", line 74, in perform_destroy
+    super().perform_destroy(instance)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 95, in perform_destroy
+    instance.delete()
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 1272, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/deletion.py", line 468, in delete
+    count = qs._raw_delete(using=self.using)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1210, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: course_popularity
+INFO 2024-11-20 08:38:28,799 views Cache invalidated after creating a course
+ERROR 2024-11-20 08:38:28,800 log Internal Server Error: /courses/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/analytics/middleware.py", line 16, in __call__
+    ApiRequestLog.objects.create(
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/fields/related_descriptors.py", line 306, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: admin>": the current database router prevents this relation.
+INFO 2024-11-20 08:38:29,512 views Cache invalidated after creating a course
+ERROR 2024-11-20 08:38:29,513 log Internal Server Error: /courses/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/analytics/middleware.py", line 16, in __call__
+    ApiRequestLog.objects.create(
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/fields/related_descriptors.py", line 306, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: admin>": the current database router prevents this relation.
+INFO 2024-11-20 08:39:42,345 views Cache miss for courses list
+INFO 2024-11-20 08:39:42,657 views Cache miss for courses list
+INFO 2024-11-20 08:39:43,290 views Cache invalidated after creating a course
+ERROR 2024-11-20 08:39:43,296 log Internal Server Error: /courses/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/analytics/middleware.py", line 16, in __call__
+    ApiRequestLog.objects.create(
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/fields/related_descriptors.py", line 306, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: admin>": the current database router prevents this relation.
+ERROR 2024-11-20 08:39:43,826 log Internal Server Error: /courses/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/analytics/middleware.py", line 16, in __call__
+    ApiRequestLog.objects.create(
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/fields/related_descriptors.py", line 306, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: teacher>": the current database router prevents this relation.
+INFO 2024-11-20 08:39:44,878 views Cache invalidated after updating a course
+INFO 2024-11-20 08:39:45,192 views Cache invalidated after updating a course
+ERROR 2024-11-20 08:39:45,504 log Internal Server Error: /courses/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: course_popularity
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 91, in destroy
+    self.perform_destroy(instance)
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py", line 74, in perform_destroy
+    super().perform_destroy(instance)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/mixins.py", line 95, in perform_destroy
+    instance.delete()
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 1272, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/deletion.py", line 468, in delete
+    count = qs._raw_delete(using=self.using)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1210, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: course_popularity
+INFO 2024-11-20 08:39:46,296 views Cache invalidated after creating a course
+ERROR 2024-11-20 08:39:46,297 log Internal Server Error: /courses/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/analytics/middleware.py", line 16, in __call__
+    ApiRequestLog.objects.create(
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/fields/related_descriptors.py", line 306, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: admin>": the current database router prevents this relation.
+INFO 2024-11-20 08:39:47,038 views Cache invalidated after creating a course
+ERROR 2024-11-20 08:39:47,039 log Internal Server Error: /courses/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/analytics/middleware.py", line 16, in __call__
+    ApiRequestLog.objects.create(
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/fields/related_descriptors.py", line 306, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: admin>": the current database router prevents this relation.
+INFO 2024-11-20 08:43:25,806 views Cache miss for courses list
+INFO 2024-11-20 08:43:26,111 views Cache miss for courses list
+INFO 2024-11-20 08:43:26,727 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:43:27,030 log Forbidden: /courses/
+INFO 2024-11-20 08:43:46,599 views Cache miss for courses list
+INFO 2024-11-20 08:43:46,907 views Cache miss for courses list
+INFO 2024-11-20 08:43:47,510 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:43:47,812 log Forbidden: /courses/
+INFO 2024-11-20 08:43:48,718 views Cache invalidated after updating a course
+INFO 2024-11-20 08:43:49,018 views Cache invalidated after updating a course
+INFO 2024-11-20 08:43:49,317 views Cache invalidated after deleting a course
+WARNING 2024-11-20 08:43:49,914 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:43:50,598 log Too Many Requests: /courses/
+WARNING 2024-11-20 08:43:53,018 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:43:54,219 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:43:55,421 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:43:56,629 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:43:57,835 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:43:58,738 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:43:59,647 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:44:00,544 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:44:01,439 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:44:02,333 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:44:03,231 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:44:04,131 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:44:05,172 log Too Many Requests: /usersregister/
+WARNING 2024-11-20 08:44:05,770 log Too Many Requests: /users2/role/
+WARNING 2024-11-20 08:44:06,365 log Forbidden: /users2/role/
+WARNING 2024-11-20 08:44:06,664 log Too Many Requests: /users1/role/
+WARNING 2024-11-20 08:44:06,963 log Forbidden: /users1/role/
+INFO 2024-11-20 08:46:34,062 views Cache miss for courses list
+INFO 2024-11-20 08:46:34,364 views Cache miss for courses list
+INFO 2024-11-20 08:46:34,962 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:46:35,262 log Forbidden: /courses/
+INFO 2024-11-20 08:46:36,167 views Cache invalidated after updating a course
+INFO 2024-11-20 08:46:36,472 views Cache invalidated after updating a course
+INFO 2024-11-20 08:46:36,776 views Cache invalidated after deleting a course
+INFO 2024-11-20 08:46:37,376 views Cache invalidated after creating a course
+INFO 2024-11-20 08:46:37,377 views Cache miss for courses list
+INFO 2024-11-20 08:46:37,380 views Cache hit for courses list
+INFO 2024-11-20 08:46:37,384 views Cache invalidated after updating a course
+INFO 2024-11-20 08:46:37,385 views Cache miss for courses list
+INFO 2024-11-20 08:46:37,993 views Cache invalidated after creating a course
+WARNING 2024-11-20 08:46:37,994 log Forbidden: /courses/
+WARNING 2024-11-20 08:46:40,394 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:46:41,693 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:46:42,889 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:46:44,098 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:46:45,288 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:46:46,489 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:46:47,692 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:46:48,902 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:46:50,107 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:46:51,305 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:46:52,205 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:46:53,111 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:46:54,035 log Too Many Requests: /usersregister/
+INFO 2024-11-20 08:46:54,639 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 08:46:55,239 log Forbidden: /users2/role/
+INFO 2024-11-20 08:46:55,540 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 08:46:55,839 log Forbidden: /users1/role/
+INFO 2024-11-20 08:47:58,984 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 08:47:59,584 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 08:48:00,190 log Forbidden: /users2/role/
+INFO 2024-11-20 08:48:00,490 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 08:48:00,788 log Forbidden: /users1/role/
+WARNING 2024-11-20 08:48:17,992 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:48:19,281 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:48:20,486 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:48:21,700 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:48:22,902 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:48:24,111 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:48:25,312 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:48:26,509 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:48:27,718 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-20 08:48:28,624 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:48:29,526 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 08:48:30,436 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 08:52:19,128 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 08:52:19,742 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 08:52:20,345 log Forbidden: /users2/role/
+INFO 2024-11-20 08:52:20,657 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 08:52:20,960 log Forbidden: /users1/role/
+WARNING 2024-11-20 08:54:43,224 log Not Found: /api/grades/
+INFO 2024-11-20 08:55:13,114 views Assigning permissions for action: create
+ERROR 2024-11-20 08:55:13,120 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+WARNING 2024-11-20 08:55:23,420 log Not Found: /grades
+WARNING 2024-11-20 08:55:58,757 log Not Found: /grades
+INFO 2024-11-20 08:58:53,439 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:06:17,933 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-20 09:06:18,137 views Fetching grades for user: AnonymousUser
+INFO 2024-11-20 09:06:18,139 views Fetching grades for user: AnonymousUser
+INFO 2024-11-20 09:06:18,140 views Fetching grades for user: AnonymousUser
+INFO 2024-11-20 09:06:18,141 views Fetching grades for user: AnonymousUser
+INFO 2024-11-20 09:06:18,161 views Fetching grades for user: AnonymousUser
+INFO 2024-11-20 09:06:18,184 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 30478
+INFO 2024-11-20 09:10:00,900 views Assigning permissions for action: create
+ERROR 2024-11-20 09:10:00,907 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 09:10:20,622 views Assigning permissions for action: create
+ERROR 2024-11-20 09:10:20,629 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 09:12:23,646 views Assigning permissions for action: create
+ERROR 2024-11-20 09:12:23,652 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 09:13:06,248 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:13:06,846 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:13:11,903 views Assigning permissions for action: create
+ERROR 2024-11-20 09:13:11,910 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py", line 8, in has_permission
+    return request.user.role == 'teacher'
+           ^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'role'
+INFO 2024-11-20 09:16:29,579 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-20 09:16:30,170 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:16:44,239 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-20 09:16:44,861 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:16:49,247 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-20 09:16:49,804 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:16:52,098 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-20 09:16:52,639 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:16:55,223 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-20 09:16:55,800 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:16:58,421 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-20 09:16:59,019 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:17:01,342 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-20 09:17:01,885 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:17:05,528 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-20 09:17:06,094 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:17:07,643 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/permissions.py changed, reloading.
+INFO 2024-11-20 09:17:08,215 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:17:56,748 views Assigning permissions for action: create
+WARNING 2024-11-20 09:17:56,748 log Unauthorized: /grades/
+INFO 2024-11-20 09:19:39,470 views Assigning permissions for action: create
+WARNING 2024-11-20 09:19:39,471 log Unauthorized: /grades/
+INFO 2024-11-20 09:35:21,888 views Assigning permissions for action: list
+INFO 2024-11-20 09:35:21,888 views Fetching grades for user: teacher
+INFO 2024-11-20 09:35:21,888 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:35:21,891 views Assigning permissions for action: create
+INFO 2024-11-20 09:35:21,891 views User teacher is attempting to create a grade.
+INFO 2024-11-20 09:35:21,893 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 09:46:03,804 views Assigning permissions for action: create
+WARNING 2024-11-20 09:46:03,804 log Forbidden: /grades/
+INFO 2024-11-20 09:46:05,103 views Assigning permissions for action: create
+WARNING 2024-11-20 09:46:05,103 log Forbidden: /grades/
+INFO 2024-11-20 09:46:06,307 views Assigning permissions for action: list
+INFO 2024-11-20 09:46:06,307 views Fetching grades for user: teacher
+INFO 2024-11-20 09:46:06,307 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:46:06,310 views Assigning permissions for action: create
+INFO 2024-11-20 09:46:06,310 views User teacher is attempting to create a grade.
+INFO 2024-11-20 09:46:06,312 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 09:46:07,514 views Assigning permissions for action: destroy
+WARNING 2024-11-20 09:46:07,515 log Forbidden: /grades/1/
+INFO 2024-11-20 09:46:08,719 views Assigning permissions for action: destroy
+WARNING 2024-11-20 09:46:08,719 log Forbidden: /grades/1/
+INFO 2024-11-20 09:46:09,919 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:46:09,920 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 09:46:09,920 views Fetching grades for user: teacher
+INFO 2024-11-20 09:46:09,920 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:46:09,921 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:46:09,921 views Fetching grades for user: teacher
+INFO 2024-11-20 09:46:09,921 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:46:09,921 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:46:09,923 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 09:46:11,122 views Assigning permissions for action: list
+INFO 2024-11-20 09:46:11,122 views Fetching grades for user: admin
+INFO 2024-11-20 09:46:11,122 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:46:12,324 views Assigning permissions for action: list
+INFO 2024-11-20 09:46:12,325 views Fetching grades for user: student
+INFO 2024-11-20 09:46:12,325 views User student is a student. Returning their grades.
+INFO 2024-11-20 09:46:13,530 views Assigning permissions for action: list
+INFO 2024-11-20 09:46:13,530 views Fetching grades for user: teacher
+INFO 2024-11-20 09:46:13,530 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:46:14,724 views Assigning permissions for action: partial_update
+WARNING 2024-11-20 09:46:14,724 log Forbidden: /grades/1/
+WARNING 2024-11-20 09:46:15,632 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:46:16,546 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 09:51:32,851 views Assigning permissions for action: list
+INFO 2024-11-20 09:51:32,851 views Fetching grades for user: admin
+INFO 2024-11-20 09:51:32,851 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:51:32,854 views Assigning permissions for action: create
+WARNING 2024-11-20 09:51:32,854 log Forbidden: /grades/
+INFO 2024-11-20 09:51:34,157 views Assigning permissions for action: create
+WARNING 2024-11-20 09:51:34,157 log Forbidden: /grades/
+INFO 2024-11-20 09:51:35,361 views Assigning permissions for action: list
+INFO 2024-11-20 09:51:35,362 views Fetching grades for user: teacher
+INFO 2024-11-20 09:51:35,362 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:51:35,364 views Assigning permissions for action: create
+INFO 2024-11-20 09:51:35,365 views User teacher is attempting to create a grade.
+INFO 2024-11-20 09:51:35,367 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 09:51:36,572 views Assigning permissions for action: destroy
+WARNING 2024-11-20 09:51:36,572 log Forbidden: /grades/1/
+INFO 2024-11-20 09:51:37,781 views Assigning permissions for action: destroy
+WARNING 2024-11-20 09:51:37,781 log Forbidden: /grades/1/
+INFO 2024-11-20 09:51:38,982 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:51:38,983 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 09:51:38,983 views Fetching grades for user: teacher
+INFO 2024-11-20 09:51:38,984 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:51:38,985 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:51:38,985 views Fetching grades for user: teacher
+INFO 2024-11-20 09:51:38,985 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:51:38,985 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:51:38,987 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 09:51:40,183 views Assigning permissions for action: list
+INFO 2024-11-20 09:51:40,184 views Fetching grades for user: admin
+INFO 2024-11-20 09:51:40,184 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:51:41,387 views Assigning permissions for action: list
+INFO 2024-11-20 09:51:41,388 views Fetching grades for user: student
+INFO 2024-11-20 09:51:41,388 views User student is a student. Returning their grades.
+INFO 2024-11-20 09:51:42,616 views Assigning permissions for action: list
+INFO 2024-11-20 09:51:42,617 views Fetching grades for user: teacher
+INFO 2024-11-20 09:51:42,617 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:51:43,850 views Assigning permissions for action: partial_update
+WARNING 2024-11-20 09:51:43,851 log Forbidden: /grades/1/
+WARNING 2024-11-20 09:51:44,766 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:51:45,698 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 09:52:32,505 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:52:33,098 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:52:35,425 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:52:35,970 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:54:07,125 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:54:07,761 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:54:09,067 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:54:09,621 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:54:15,995 views Assigning permissions for action: list
+INFO 2024-11-20 09:54:15,996 views Fetching grades for user: admin
+INFO 2024-11-20 09:54:15,996 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:54:15,998 views Assigning permissions for action: create
+WARNING 2024-11-20 09:54:15,998 log Forbidden: /grades/
+INFO 2024-11-20 09:54:17,294 views Assigning permissions for action: create
+WARNING 2024-11-20 09:54:17,294 log Forbidden: /grades/
+INFO 2024-11-20 09:54:18,490 views Assigning permissions for action: list
+INFO 2024-11-20 09:54:18,491 views Fetching grades for user: teacher
+INFO 2024-11-20 09:54:18,491 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:54:18,494 views Assigning permissions for action: create
+INFO 2024-11-20 09:54:18,494 views User teacher is attempting to create a grade.
+INFO 2024-11-20 09:54:18,496 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 09:54:19,716 views Assigning permissions for action: destroy
+WARNING 2024-11-20 09:54:19,716 log Forbidden: /grades/1/
+INFO 2024-11-20 09:54:20,933 views Assigning permissions for action: destroy
+WARNING 2024-11-20 09:54:20,933 log Forbidden: /grades/1/
+INFO 2024-11-20 09:54:22,120 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:54:22,121 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 09:54:22,121 views Fetching grades for user: teacher
+INFO 2024-11-20 09:54:22,121 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:54:22,121 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:54:22,122 views Fetching grades for user: teacher
+INFO 2024-11-20 09:54:22,122 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:54:22,122 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:54:22,123 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 09:54:23,327 views Assigning permissions for action: list
+INFO 2024-11-20 09:54:23,328 views Fetching grades for user: admin
+INFO 2024-11-20 09:54:23,328 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:54:24,524 views Assigning permissions for action: list
+INFO 2024-11-20 09:54:24,525 views Fetching grades for user: student
+INFO 2024-11-20 09:54:24,525 views User student is a student. Returning their grades.
+INFO 2024-11-20 09:54:25,742 views Assigning permissions for action: list
+INFO 2024-11-20 09:54:25,743 views Fetching grades for user: teacher
+INFO 2024-11-20 09:54:25,743 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:54:26,940 views Assigning permissions for action: partial_update
+WARNING 2024-11-20 09:54:26,940 log Forbidden: /grades/1/
+WARNING 2024-11-20 09:54:27,845 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:54:28,758 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 09:56:05,502 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:56:06,150 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:56:07,441 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:56:07,978 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:56:10,311 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:56:10,845 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:56:12,152 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:56:12,702 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:56:18,177 views Assigning permissions for action: list
+INFO 2024-11-20 09:56:18,178 views Fetching grades for user: admin
+INFO 2024-11-20 09:56:18,178 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:56:18,180 views Assigning permissions for action: create
+INFO 2024-11-20 09:56:18,181 views User admin is attempting to create a grade.
+ERROR 2024-11-20 09:56:18,182 views User admin does not teach the course Course object (1).
+WARNING 2024-11-20 09:56:18,182 log Forbidden: /grades/
+INFO 2024-11-20 09:56:19,470 views Assigning permissions for action: create
+WARNING 2024-11-20 09:56:19,470 log Forbidden: /grades/
+INFO 2024-11-20 09:56:20,666 views Assigning permissions for action: list
+INFO 2024-11-20 09:56:20,666 views Fetching grades for user: teacher
+INFO 2024-11-20 09:56:20,673 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:56:20,676 views Assigning permissions for action: create
+WARNING 2024-11-20 09:56:20,677 log Forbidden: /grades/
+INFO 2024-11-20 09:56:21,870 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:56:21,871 views User admin is attempting to delete a grade.
+INFO 2024-11-20 09:56:21,871 views Fetching grades for user: admin
+INFO 2024-11-20 09:56:21,871 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:56:21,871 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:56:21,871 views Fetching grades for user: admin
+INFO 2024-11-20 09:56:21,872 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:56:21,872 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:56:21,873 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 09:56:23,069 views Assigning permissions for action: destroy
+WARNING 2024-11-20 09:56:23,069 log Forbidden: /grades/1/
+INFO 2024-11-20 09:56:24,265 views Assigning permissions for action: destroy
+WARNING 2024-11-20 09:56:24,265 log Forbidden: /grades/1/
+INFO 2024-11-20 09:56:25,472 views Assigning permissions for action: list
+INFO 2024-11-20 09:56:25,473 views Fetching grades for user: admin
+INFO 2024-11-20 09:56:25,474 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:56:26,670 views Assigning permissions for action: list
+INFO 2024-11-20 09:56:26,670 views Fetching grades for user: student
+INFO 2024-11-20 09:56:26,670 views User student is a student. Returning their grades.
+INFO 2024-11-20 09:56:27,872 views Assigning permissions for action: list
+INFO 2024-11-20 09:56:27,872 views Fetching grades for user: teacher
+INFO 2024-11-20 09:56:27,872 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:56:29,074 views Assigning permissions for action: partial_update
+INFO 2024-11-20 09:56:29,075 views User admin is attempting to update a grade.
+INFO 2024-11-20 09:56:29,075 views Fetching grades for user: admin
+INFO 2024-11-20 09:56:29,075 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:56:29,076 views Assigning permissions for action: partial_update
+INFO 2024-11-20 09:56:29,076 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+WARNING 2024-11-20 09:56:29,973 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:56:30,879 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 09:56:45,539 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:56:46,127 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:56:47,410 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:56:47,941 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:56:49,523 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:56:50,130 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:56:52,445 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:56:52,993 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:56:55,582 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:56:56,147 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-20 09:57:07,953 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:57:08,988 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:57:09,904 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:57:10,803 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:57:11,707 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:57:12,616 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:57:13,524 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:57:14,425 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:57:15,321 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:57:16,211 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:57:17,112 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 09:57:18,393 views Assigning permissions for action: partial_update
+ERROR 2024-11-20 09:57:18,400 log Internal Server Error: /grades/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsAdmin() | IsTeacher()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~^~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsAdmin' and 'IsTeacher'
+INFO 2024-11-20 09:57:35,139 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:57:35,751 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:58:17,305 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:58:17,851 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:58:27,631 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 09:58:28,199 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 09:58:36,458 views Assigning permissions for action: list
+INFO 2024-11-20 09:58:36,458 views Fetching grades for user: admin
+INFO 2024-11-20 09:58:36,458 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:58:36,461 views Assigning permissions for action: create
+WARNING 2024-11-20 09:58:36,461 log Forbidden: /grades/
+INFO 2024-11-20 09:58:37,752 views Assigning permissions for action: create
+WARNING 2024-11-20 09:58:37,752 log Forbidden: /grades/
+INFO 2024-11-20 09:58:38,950 views Assigning permissions for action: list
+INFO 2024-11-20 09:58:38,950 views Fetching grades for user: teacher
+INFO 2024-11-20 09:58:38,951 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:58:38,953 views Assigning permissions for action: create
+INFO 2024-11-20 09:58:38,954 views User teacher is attempting to create a grade.
+INFO 2024-11-20 09:58:38,956 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 09:58:40,151 views Assigning permissions for action: destroy
+WARNING 2024-11-20 09:58:40,151 log Forbidden: /grades/1/
+INFO 2024-11-20 09:58:41,345 views Assigning permissions for action: destroy
+WARNING 2024-11-20 09:58:41,345 log Forbidden: /grades/1/
+INFO 2024-11-20 09:58:42,545 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:58:42,546 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 09:58:42,546 views Fetching grades for user: teacher
+INFO 2024-11-20 09:58:42,546 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:58:42,546 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:58:42,546 views Fetching grades for user: teacher
+INFO 2024-11-20 09:58:42,546 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:58:42,547 views Assigning permissions for action: destroy
+INFO 2024-11-20 09:58:42,548 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 09:58:43,763 views Assigning permissions for action: list
+INFO 2024-11-20 09:58:43,764 views Fetching grades for user: admin
+INFO 2024-11-20 09:58:43,764 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:58:44,983 views Assigning permissions for action: list
+INFO 2024-11-20 09:58:44,984 views Fetching grades for user: student
+INFO 2024-11-20 09:58:44,984 views User student is a student. Returning their grades.
+INFO 2024-11-20 09:58:46,175 views Assigning permissions for action: list
+INFO 2024-11-20 09:58:46,175 views Fetching grades for user: teacher
+INFO 2024-11-20 09:58:46,175 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 09:58:47,366 views Assigning permissions for action: partial_update
+WARNING 2024-11-20 09:58:47,366 log Forbidden: /grades/1/
+WARNING 2024-11-20 09:58:48,264 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 09:58:49,171 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 09:59:54,184 views Assigning permissions for action: list
+INFO 2024-11-20 09:59:54,185 views Fetching grades for user: admin
+INFO 2024-11-20 09:59:54,185 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 09:59:54,187 views Assigning permissions for action: create
+WARNING 2024-11-20 09:59:54,187 log Forbidden: /grades/
+INFO 2024-11-20 10:01:24,884 views Assigning permissions for action: list
+INFO 2024-11-20 10:01:24,884 views Fetching grades for user: admin
+INFO 2024-11-20 10:01:24,885 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:01:24,887 views Assigning permissions for action: create
+WARNING 2024-11-20 10:01:24,887 log Forbidden: /grades/
+INFO 2024-11-20 10:04:59,049 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:04:59,642 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:05:04,008 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:05:04,565 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:05:08,210 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:05:08,802 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:05:17,307 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:05:17,854 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:05:31,865 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:05:32,447 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:05:34,064 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:05:34,715 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:05:38,069 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:05:38,605 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:06:05,153 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:06:05,748 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:06:09,111 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:06:09,668 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:06:10,994 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:06:11,528 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:06:34,557 views Assigning permissions for action: list
+INFO 2024-11-20 10:06:34,558 views Fetching grades for user: admin
+INFO 2024-11-20 10:06:34,558 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:06:34,561 views Assigning permissions for action: create
+ERROR 2024-11-20 10:06:34,567 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:06:35,929 views Assigning permissions for action: create
+ERROR 2024-11-20 10:06:35,929 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:06:37,195 views Assigning permissions for action: list
+INFO 2024-11-20 10:06:37,196 views Fetching grades for user: teacher
+INFO 2024-11-20 10:06:37,196 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:06:37,198 views Assigning permissions for action: create
+ERROR 2024-11-20 10:06:37,198 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:06:38,457 views Assigning permissions for action: destroy
+ERROR 2024-11-20 10:06:38,457 log Internal Server Error: /grades/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:06:39,718 views Assigning permissions for action: destroy
+ERROR 2024-11-20 10:06:39,718 log Internal Server Error: /grades/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:06:40,991 views Assigning permissions for action: destroy
+ERROR 2024-11-20 10:06:40,991 log Internal Server Error: /grades/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:06:42,296 views Assigning permissions for action: list
+INFO 2024-11-20 10:06:42,296 views Fetching grades for user: admin
+INFO 2024-11-20 10:06:42,297 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:06:43,512 views Assigning permissions for action: list
+INFO 2024-11-20 10:06:43,513 views Fetching grades for user: student
+INFO 2024-11-20 10:06:43,513 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:06:44,741 views Assigning permissions for action: list
+INFO 2024-11-20 10:06:44,741 views Fetching grades for user: teacher
+INFO 2024-11-20 10:06:44,741 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:06:45,957 views Assigning permissions for action: partial_update
+ERROR 2024-11-20 10:06:45,957 log Internal Server Error: /grades/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+WARNING 2024-11-20 10:06:46,927 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:06:47,824 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:07:01,989 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:07:02,594 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:07:04,917 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:07:05,450 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:07:17,115 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:07:17,709 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-20 10:07:18,658 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:07:19,031 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+WARNING 2024-11-20 10:07:19,592 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:07:19,604 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-20 10:07:20,525 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:07:21,455 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:07:22,358 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:07:33,586 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:07:34,157 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:07:41,681 views Assigning permissions for action: list
+INFO 2024-11-20 10:07:41,681 views Fetching grades for user: admin
+INFO 2024-11-20 10:07:41,681 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:07:41,684 views Assigning permissions for action: create
+WARNING 2024-11-20 10:07:41,684 log Forbidden: /grades/
+INFO 2024-11-20 10:07:42,994 views Assigning permissions for action: create
+WARNING 2024-11-20 10:07:42,995 log Forbidden: /grades/
+INFO 2024-11-20 10:07:44,237 views Assigning permissions for action: list
+INFO 2024-11-20 10:07:44,237 views Fetching grades for user: teacher
+INFO 2024-11-20 10:07:44,238 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:07:44,240 views Assigning permissions for action: create
+WARNING 2024-11-20 10:07:44,240 log Forbidden: /grades/
+INFO 2024-11-20 10:07:45,440 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:07:45,440 log Forbidden: /grades/1/
+INFO 2024-11-20 10:07:46,649 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:07:46,650 log Forbidden: /grades/1/
+INFO 2024-11-20 10:07:47,838 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:07:47,839 log Forbidden: /grades/1/
+INFO 2024-11-20 10:07:49,037 views Assigning permissions for action: list
+INFO 2024-11-20 10:07:49,037 views Fetching grades for user: admin
+INFO 2024-11-20 10:07:49,037 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:07:50,227 views Assigning permissions for action: list
+INFO 2024-11-20 10:07:50,228 views Fetching grades for user: student
+INFO 2024-11-20 10:07:50,228 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:07:51,420 views Assigning permissions for action: list
+INFO 2024-11-20 10:07:51,421 views Fetching grades for user: teacher
+INFO 2024-11-20 10:07:51,421 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:07:52,617 views Assigning permissions for action: partial_update
+WARNING 2024-11-20 10:07:52,617 log Forbidden: /grades/1/
+WARNING 2024-11-20 10:07:53,521 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:07:54,425 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:08:02,745 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:08:03,354 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:08:06,699 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:08:07,256 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:08:08,555 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:08:09,161 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:08:53,092 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:08:53,635 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:09:03,432 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:09:04,024 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:09:10,772 views Assigning permissions for action: list
+INFO 2024-11-20 10:09:10,773 views Fetching grades for user: admin
+INFO 2024-11-20 10:09:10,773 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:09:10,775 views Assigning permissions for action: create
+ERROR 2024-11-20 10:09:10,781 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:09:12,153 views Assigning permissions for action: create
+ERROR 2024-11-20 10:09:12,153 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:09:13,421 views Assigning permissions for action: list
+INFO 2024-11-20 10:09:13,422 views Fetching grades for user: teacher
+INFO 2024-11-20 10:09:13,422 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:09:13,424 views Assigning permissions for action: create
+ERROR 2024-11-20 10:09:13,424 log Internal Server Error: /grades/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:09:14,684 views Assigning permissions for action: destroy
+ERROR 2024-11-20 10:09:14,684 log Internal Server Error: /grades/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:09:15,934 views Assigning permissions for action: destroy
+ERROR 2024-11-20 10:09:15,934 log Internal Server Error: /grades/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:09:17,188 views Assigning permissions for action: destroy
+ERROR 2024-11-20 10:09:17,188 log Internal Server Error: /grades/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+INFO 2024-11-20 10:09:18,463 views Assigning permissions for action: list
+INFO 2024-11-20 10:09:18,464 views Fetching grades for user: admin
+INFO 2024-11-20 10:09:18,464 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:09:19,657 views Assigning permissions for action: list
+INFO 2024-11-20 10:09:19,658 views Fetching grades for user: student
+INFO 2024-11-20 10:09:19,658 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:09:20,857 views Assigning permissions for action: list
+INFO 2024-11-20 10:09:20,858 views Fetching grades for user: teacher
+INFO 2024-11-20 10:09:20,858 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:09:22,049 views Assigning permissions for action: partial_update
+ERROR 2024-11-20 10:09:22,049 log Internal Server Error: /grades/1/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py", line 31, in get_permissions
+    return [IsTeacher() | IsAdmin()]  # Only teachers or admins can modify grades
+            ~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for |: 'IsTeacher' and 'IsAdmin'
+WARNING 2024-11-20 10:09:23,027 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:09:23,927 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:11:13,569 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:11:14,187 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:11:17,531 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:11:18,064 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:11:22,707 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:11:23,288 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:11:33,147 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:11:33,713 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:11:36,074 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:11:36,634 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:11:40,986 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:11:41,543 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:11:44,001 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:11:44,535 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:11:50,225 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:11:50,822 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:11:57,490 views Assigning permissions for action: list
+INFO 2024-11-20 10:11:57,490 views Fetching grades for user: admin
+INFO 2024-11-20 10:11:57,490 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:11:57,493 views Assigning permissions for action: create
+INFO 2024-11-20 10:11:57,493 views User admin is attempting to create a grade.
+ERROR 2024-11-20 10:11:57,494 views User admin does not teach the course Course object (1).
+WARNING 2024-11-20 10:11:57,494 log Forbidden: /grades/
+INFO 2024-11-20 10:11:58,779 views Assigning permissions for action: create
+WARNING 2024-11-20 10:11:58,780 log Forbidden: /grades/
+INFO 2024-11-20 10:11:59,964 views Assigning permissions for action: list
+INFO 2024-11-20 10:11:59,965 views Fetching grades for user: teacher
+INFO 2024-11-20 10:11:59,965 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:11:59,967 views Assigning permissions for action: create
+INFO 2024-11-20 10:11:59,967 views User teacher is attempting to create a grade.
+INFO 2024-11-20 10:11:59,969 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:12:01,171 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:12:01,171 views User admin is attempting to delete a grade.
+INFO 2024-11-20 10:12:01,171 views Fetching grades for user: admin
+INFO 2024-11-20 10:12:01,171 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:12:01,172 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:12:01,172 views Fetching grades for user: admin
+INFO 2024-11-20 10:12:01,172 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:12:01,172 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:12:01,174 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:12:02,386 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:12:02,386 log Forbidden: /grades/1/
+INFO 2024-11-20 10:12:03,579 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:12:03,580 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 10:12:03,580 views Fetching grades for user: teacher
+INFO 2024-11-20 10:12:03,580 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:12:03,580 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:12:03,580 views Fetching grades for user: teacher
+INFO 2024-11-20 10:12:03,580 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:12:03,581 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:12:03,582 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:12:04,788 views Assigning permissions for action: list
+INFO 2024-11-20 10:12:04,788 views Fetching grades for user: admin
+INFO 2024-11-20 10:12:04,788 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:12:05,992 views Assigning permissions for action: list
+INFO 2024-11-20 10:12:05,993 views Fetching grades for user: student
+INFO 2024-11-20 10:12:05,993 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:12:07,206 views Assigning permissions for action: list
+INFO 2024-11-20 10:12:07,206 views Fetching grades for user: teacher
+INFO 2024-11-20 10:12:07,207 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:12:08,394 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:12:08,394 views User admin is attempting to update a grade.
+INFO 2024-11-20 10:12:08,394 views Fetching grades for user: admin
+INFO 2024-11-20 10:12:08,395 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:12:08,395 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:12:08,396 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+WARNING 2024-11-20 10:12:09,292 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:12:10,192 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:13:23,088 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:13:23,681 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:13:28,063 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:13:28,582 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:13:33,975 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:13:34,532 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:13:36,108 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:13:36,715 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:13:41,681 views Assigning permissions for action: list
+INFO 2024-11-20 10:13:41,681 views Fetching grades for user: admin
+INFO 2024-11-20 10:13:41,681 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:13:41,684 views Assigning permissions for action: create
+INFO 2024-11-20 10:13:41,684 views User admin is attempting to create a grade.
+ERROR 2024-11-20 10:13:41,685 views User admin does not teach the course Course object (1).
+WARNING 2024-11-20 10:13:41,685 log Forbidden: /grades/
+INFO 2024-11-20 10:13:42,974 views Assigning permissions for action: create
+WARNING 2024-11-20 10:13:42,974 log Forbidden: /grades/
+INFO 2024-11-20 10:13:44,170 views Assigning permissions for action: list
+INFO 2024-11-20 10:13:44,171 views Fetching grades for user: teacher
+INFO 2024-11-20 10:13:44,171 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:13:44,173 views Assigning permissions for action: create
+INFO 2024-11-20 10:13:44,174 views User teacher is attempting to create a grade.
+INFO 2024-11-20 10:13:44,176 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:13:45,369 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:13:45,370 views User admin is attempting to delete a grade.
+INFO 2024-11-20 10:13:45,370 views Fetching grades for user: admin
+INFO 2024-11-20 10:13:45,370 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:13:45,370 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:13:45,370 views Fetching grades for user: admin
+INFO 2024-11-20 10:13:45,370 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:13:45,371 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:13:45,372 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:13:46,565 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:13:46,565 log Forbidden: /grades/1/
+INFO 2024-11-20 10:13:47,764 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:13:47,765 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 10:13:47,765 views Fetching grades for user: teacher
+INFO 2024-11-20 10:13:47,765 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:13:47,765 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:13:47,766 views Fetching grades for user: teacher
+INFO 2024-11-20 10:13:47,766 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:13:47,766 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:13:47,767 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:13:48,989 views Assigning permissions for action: list
+INFO 2024-11-20 10:13:48,989 views Fetching grades for user: admin
+INFO 2024-11-20 10:13:48,989 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:13:50,190 views Assigning permissions for action: list
+INFO 2024-11-20 10:13:50,191 views Fetching grades for user: student
+INFO 2024-11-20 10:13:50,191 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:13:51,424 views Assigning permissions for action: list
+INFO 2024-11-20 10:13:51,425 views Fetching grades for user: teacher
+INFO 2024-11-20 10:13:51,425 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:13:52,618 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:13:52,619 views User admin is attempting to update a grade.
+INFO 2024-11-20 10:13:52,619 views Fetching grades for user: admin
+INFO 2024-11-20 10:13:52,619 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:13:52,619 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:13:52,620 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+WARNING 2024-11-20 10:13:53,525 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:13:54,428 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:19:49,144 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:19:49,764 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:19:52,087 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:19:52,632 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:19:57,003 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:19:57,560 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:19:58,846 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:19:59,439 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:20:00,717 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:20:01,298 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:20:02,632 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:20:03,166 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:20:13,754 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:20:14,318 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:20:17,666 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:20:18,216 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:20:35,055 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:20:35,597 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:20:43,367 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:20:43,959 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:20:54,250 views Assigning permissions for action: list
+INFO 2024-11-20 10:20:54,251 views Fetching grades for user: admin
+INFO 2024-11-20 10:20:54,252 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:20:54,254 views Assigning permissions for action: create
+INFO 2024-11-20 10:20:54,254 views User admin is attempting to create a grade.
+INFO 2024-11-20 10:20:54,256 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:20:55,474 views Assigning permissions for action: create
+WARNING 2024-11-20 10:20:55,474 log Forbidden: /grades/
+INFO 2024-11-20 10:20:56,681 views Assigning permissions for action: list
+INFO 2024-11-20 10:20:56,682 views Fetching grades for user: teacher
+INFO 2024-11-20 10:20:56,682 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:20:56,684 views Assigning permissions for action: create
+INFO 2024-11-20 10:20:56,685 views User teacher is attempting to create a grade.
+INFO 2024-11-20 10:20:56,687 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:20:57,879 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:20:57,879 views User admin is attempting to delete a grade.
+INFO 2024-11-20 10:20:57,879 views Fetching grades for user: admin
+INFO 2024-11-20 10:20:57,879 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:20:57,880 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:20:57,880 views Fetching grades for user: admin
+INFO 2024-11-20 10:20:57,880 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:20:57,880 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:20:57,881 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:20:59,067 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:20:59,067 log Forbidden: /grades/1/
+INFO 2024-11-20 10:21:00,260 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:21:00,260 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 10:21:00,260 views Fetching grades for user: teacher
+INFO 2024-11-20 10:21:00,260 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:21:00,261 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:21:00,261 views Fetching grades for user: teacher
+INFO 2024-11-20 10:21:00,261 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:21:00,262 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:21:00,263 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:21:01,449 views Assigning permissions for action: list
+INFO 2024-11-20 10:21:01,450 views Fetching grades for user: admin
+INFO 2024-11-20 10:21:01,450 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:21:02,642 views Assigning permissions for action: list
+INFO 2024-11-20 10:21:02,643 views Fetching grades for user: student
+INFO 2024-11-20 10:21:02,643 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:21:03,942 views Assigning permissions for action: list
+INFO 2024-11-20 10:21:03,943 views Fetching grades for user: teacher
+INFO 2024-11-20 10:21:03,943 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:21:05,139 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:21:05,140 views User admin is attempting to update a grade.
+INFO 2024-11-20 10:21:05,140 views Fetching grades for user: admin
+INFO 2024-11-20 10:21:05,140 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:21:05,140 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:21:05,141 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+WARNING 2024-11-20 10:21:06,036 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:21:06,952 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:21:12,564 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:21:13,154 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:21:14,770 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/grades/views.py changed, reloading.
+INFO 2024-11-20 10:21:15,303 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 10:39:16,595 views Assigning permissions for action: list
+INFO 2024-11-20 10:39:16,595 views Fetching grades for user: admin
+INFO 2024-11-20 10:39:16,595 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:39:16,598 views Assigning permissions for action: create
+INFO 2024-11-20 10:39:16,598 views User admin is attempting to create a grade.
+INFO 2024-11-20 10:39:16,600 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:39:17,805 views Assigning permissions for action: create
+WARNING 2024-11-20 10:39:17,805 log Forbidden: /grades/
+INFO 2024-11-20 10:39:19,014 views Assigning permissions for action: list
+INFO 2024-11-20 10:39:19,014 views Fetching grades for user: teacher
+INFO 2024-11-20 10:39:19,014 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:39:19,017 views Assigning permissions for action: create
+INFO 2024-11-20 10:39:19,017 views User teacher is attempting to create a grade.
+INFO 2024-11-20 10:39:19,019 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:39:20,256 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:39:20,257 views User admin is attempting to delete a grade.
+INFO 2024-11-20 10:39:20,257 views Fetching grades for user: admin
+INFO 2024-11-20 10:39:20,257 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:39:20,258 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:39:20,258 views Fetching grades for user: admin
+INFO 2024-11-20 10:39:20,258 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:39:20,258 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:39:20,259 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:39:21,458 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:39:21,458 log Forbidden: /grades/1/
+INFO 2024-11-20 10:39:22,650 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:39:22,650 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 10:39:22,651 views Fetching grades for user: teacher
+INFO 2024-11-20 10:39:22,651 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:39:22,651 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:39:22,651 views Fetching grades for user: teacher
+INFO 2024-11-20 10:39:22,652 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:39:22,652 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:39:22,653 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:39:23,870 views Assigning permissions for action: list
+INFO 2024-11-20 10:39:23,871 views Fetching grades for user: admin
+INFO 2024-11-20 10:39:23,871 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:39:25,066 views Assigning permissions for action: list
+INFO 2024-11-20 10:39:25,067 views Fetching grades for user: student
+INFO 2024-11-20 10:39:25,067 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:39:26,356 views Assigning permissions for action: list
+INFO 2024-11-20 10:39:26,357 views Fetching grades for user: teacher
+INFO 2024-11-20 10:39:26,357 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:39:27,560 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:39:27,561 views User admin is attempting to update a grade.
+INFO 2024-11-20 10:39:27,561 views Fetching grades for user: admin
+INFO 2024-11-20 10:39:27,561 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:39:27,561 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:39:27,562 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+WARNING 2024-11-20 10:39:28,487 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:39:29,385 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:45:28,672 views Assigning permissions for action: list
+INFO 2024-11-20 10:45:28,673 views Fetching grades for user: admin
+INFO 2024-11-20 10:45:28,674 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:45:28,677 views Assigning permissions for action: create
+INFO 2024-11-20 10:45:28,678 views User admin is attempting to create a grade.
+INFO 2024-11-20 10:45:28,679 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:45:29,893 views Assigning permissions for action: create
+WARNING 2024-11-20 10:45:29,893 log Forbidden: /grades/
+INFO 2024-11-20 10:45:31,105 views Assigning permissions for action: list
+INFO 2024-11-20 10:45:31,106 views Fetching grades for user: teacher
+INFO 2024-11-20 10:45:31,106 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:45:31,108 views Assigning permissions for action: create
+INFO 2024-11-20 10:45:31,109 views User teacher is attempting to create a grade.
+INFO 2024-11-20 10:45:31,111 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:45:32,321 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:45:32,322 views User admin is attempting to delete a grade.
+INFO 2024-11-20 10:45:32,322 views Fetching grades for user: admin
+INFO 2024-11-20 10:45:32,322 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:45:32,323 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:45:32,323 views Fetching grades for user: admin
+INFO 2024-11-20 10:45:32,323 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:45:32,324 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:45:32,325 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:45:33,528 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:45:33,529 log Forbidden: /grades/1/
+INFO 2024-11-20 10:45:34,735 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:45:34,736 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 10:45:34,736 views Fetching grades for user: teacher
+INFO 2024-11-20 10:45:34,736 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:45:34,737 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:45:34,737 views Fetching grades for user: teacher
+INFO 2024-11-20 10:45:34,737 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:45:34,738 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:45:34,739 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:45:35,932 views Assigning permissions for action: list
+INFO 2024-11-20 10:45:35,933 views Fetching grades for user: admin
+INFO 2024-11-20 10:45:35,933 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:45:37,134 views Assigning permissions for action: list
+INFO 2024-11-20 10:45:37,135 views Fetching grades for user: student
+INFO 2024-11-20 10:45:37,135 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:45:38,421 views Assigning permissions for action: list
+INFO 2024-11-20 10:45:38,422 views Fetching grades for user: teacher
+INFO 2024-11-20 10:45:38,422 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:45:39,617 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:45:39,618 views User admin is attempting to update a grade.
+INFO 2024-11-20 10:45:39,618 views Fetching grades for user: admin
+INFO 2024-11-20 10:45:39,618 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:45:39,618 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:45:39,619 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+WARNING 2024-11-20 10:45:40,527 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:45:41,426 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:50:13,055 views Assigning permissions for action: list
+INFO 2024-11-20 10:50:13,056 views Fetching grades for user: admin
+INFO 2024-11-20 10:50:13,056 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:50:13,059 views Assigning permissions for action: create
+INFO 2024-11-20 10:50:13,059 views User admin is attempting to create a grade.
+INFO 2024-11-20 10:50:13,061 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:50:14,262 views Assigning permissions for action: create
+WARNING 2024-11-20 10:50:14,262 log Forbidden: /grades/
+INFO 2024-11-20 10:50:15,473 views Assigning permissions for action: list
+INFO 2024-11-20 10:50:15,474 views Fetching grades for user: teacher
+INFO 2024-11-20 10:50:15,474 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:50:15,476 views Assigning permissions for action: create
+INFO 2024-11-20 10:50:15,477 views User teacher is attempting to create a grade.
+INFO 2024-11-20 10:50:15,479 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:50:16,684 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:50:16,685 views User admin is attempting to delete a grade.
+INFO 2024-11-20 10:50:16,685 views Fetching grades for user: admin
+INFO 2024-11-20 10:50:16,685 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:50:16,685 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:50:16,686 views Fetching grades for user: admin
+INFO 2024-11-20 10:50:16,686 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:50:16,686 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:50:16,687 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:50:17,907 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:50:17,907 log Forbidden: /grades/1/
+INFO 2024-11-20 10:50:19,121 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:50:19,121 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 10:50:19,121 views Fetching grades for user: teacher
+INFO 2024-11-20 10:50:19,121 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:50:19,122 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:50:19,122 views Fetching grades for user: teacher
+INFO 2024-11-20 10:50:19,122 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:50:19,123 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:50:19,124 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:50:20,331 views Assigning permissions for action: list
+INFO 2024-11-20 10:50:20,331 views Fetching grades for user: admin
+INFO 2024-11-20 10:50:20,331 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:50:21,550 views Assigning permissions for action: list
+INFO 2024-11-20 10:50:21,550 views Fetching grades for user: student
+INFO 2024-11-20 10:50:21,550 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:50:22,757 views Assigning permissions for action: list
+INFO 2024-11-20 10:50:22,757 views Fetching grades for user: teacher
+INFO 2024-11-20 10:50:22,757 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:50:24,057 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:50:24,057 views User admin is attempting to update a grade.
+INFO 2024-11-20 10:50:24,057 views Fetching grades for user: admin
+INFO 2024-11-20 10:50:24,057 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:50:24,058 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:50:24,059 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+WARNING 2024-11-20 10:50:24,965 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:50:25,881 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:51:23,512 views Assigning permissions for action: list
+INFO 2024-11-20 10:51:23,512 views Fetching grades for user: admin
+INFO 2024-11-20 10:51:23,512 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:51:23,515 views Assigning permissions for action: create
+INFO 2024-11-20 10:51:23,515 views User admin is attempting to create a grade.
+INFO 2024-11-20 10:51:23,517 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:51:24,712 views Assigning permissions for action: create
+WARNING 2024-11-20 10:51:24,712 log Forbidden: /grades/
+INFO 2024-11-20 10:51:25,926 views Assigning permissions for action: list
+INFO 2024-11-20 10:51:25,926 views Fetching grades for user: teacher
+INFO 2024-11-20 10:51:25,926 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:51:25,928 views Assigning permissions for action: create
+INFO 2024-11-20 10:51:25,929 views User teacher is attempting to create a grade.
+INFO 2024-11-20 10:51:25,931 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:51:27,139 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:51:27,139 views User admin is attempting to delete a grade.
+INFO 2024-11-20 10:51:27,139 views Fetching grades for user: admin
+INFO 2024-11-20 10:51:27,139 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:51:27,140 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:51:27,140 views Fetching grades for user: admin
+INFO 2024-11-20 10:51:27,140 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:51:27,140 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:51:27,141 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:51:28,333 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:51:28,333 log Forbidden: /grades/1/
+INFO 2024-11-20 10:51:29,535 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:51:29,536 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 10:51:29,536 views Fetching grades for user: teacher
+INFO 2024-11-20 10:51:29,536 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:51:29,536 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:51:29,536 views Fetching grades for user: teacher
+INFO 2024-11-20 10:51:29,536 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:51:29,537 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:51:29,538 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:51:30,739 views Assigning permissions for action: list
+INFO 2024-11-20 10:51:30,739 views Fetching grades for user: admin
+INFO 2024-11-20 10:51:30,739 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:51:31,938 views Assigning permissions for action: list
+INFO 2024-11-20 10:51:31,938 views Fetching grades for user: student
+INFO 2024-11-20 10:51:31,939 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:51:33,136 views Assigning permissions for action: list
+INFO 2024-11-20 10:51:33,137 views Fetching grades for user: teacher
+INFO 2024-11-20 10:51:33,137 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:51:34,430 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:51:34,430 views User admin is attempting to update a grade.
+INFO 2024-11-20 10:51:34,430 views Fetching grades for user: admin
+INFO 2024-11-20 10:51:34,430 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:51:34,431 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:51:34,431 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+WARNING 2024-11-20 10:51:35,327 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:51:36,237 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 10:53:50,151 views Assigning permissions for action: list
+INFO 2024-11-20 10:53:50,152 views Fetching grades for user: admin
+INFO 2024-11-20 10:53:50,152 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:53:50,155 views Assigning permissions for action: create
+INFO 2024-11-20 10:53:50,155 views User admin is attempting to create a grade.
+INFO 2024-11-20 10:53:50,157 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:53:51,362 views Assigning permissions for action: create
+WARNING 2024-11-20 10:53:51,363 log Forbidden: /grades/
+INFO 2024-11-20 10:53:52,558 views Assigning permissions for action: list
+INFO 2024-11-20 10:53:52,558 views Fetching grades for user: teacher
+INFO 2024-11-20 10:53:52,558 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:53:52,561 views Assigning permissions for action: create
+INFO 2024-11-20 10:53:52,561 views User teacher is attempting to create a grade.
+INFO 2024-11-20 10:53:52,565 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 10:53:53,765 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:53:53,766 views User admin is attempting to delete a grade.
+INFO 2024-11-20 10:53:53,766 views Fetching grades for user: admin
+INFO 2024-11-20 10:53:53,766 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:53:53,766 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:53:53,766 views Fetching grades for user: admin
+INFO 2024-11-20 10:53:53,767 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:53:53,767 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:53:53,768 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:53:54,955 views Assigning permissions for action: destroy
+WARNING 2024-11-20 10:53:54,956 log Forbidden: /grades/1/
+INFO 2024-11-20 10:53:56,143 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:53:56,144 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 10:53:56,144 views Fetching grades for user: teacher
+INFO 2024-11-20 10:53:56,144 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:53:56,145 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:53:56,145 views Fetching grades for user: teacher
+INFO 2024-11-20 10:53:56,145 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:53:56,145 views Assigning permissions for action: destroy
+INFO 2024-11-20 10:53:56,146 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 10:53:57,345 views Assigning permissions for action: list
+INFO 2024-11-20 10:53:57,346 views Fetching grades for user: admin
+INFO 2024-11-20 10:53:57,346 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:53:58,538 views Assigning permissions for action: list
+INFO 2024-11-20 10:53:58,539 views Fetching grades for user: student
+INFO 2024-11-20 10:53:58,539 views User student is a student. Returning their grades.
+INFO 2024-11-20 10:53:59,728 views Assigning permissions for action: list
+INFO 2024-11-20 10:53:59,729 views Fetching grades for user: teacher
+INFO 2024-11-20 10:53:59,729 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 10:54:01,016 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:54:01,016 views User admin is attempting to update a grade.
+INFO 2024-11-20 10:54:01,016 views Fetching grades for user: admin
+INFO 2024-11-20 10:54:01,016 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 10:54:01,017 views Assigning permissions for action: partial_update
+INFO 2024-11-20 10:54:01,018 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+WARNING 2024-11-20 10:54:01,939 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 10:54:02,842 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 11:01:39,625 views Assigning permissions for action: list
+INFO 2024-11-20 11:01:39,625 views Fetching grades for user: admin
+INFO 2024-11-20 11:01:39,626 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:01:39,628 views Assigning permissions for action: create
+INFO 2024-11-20 11:01:39,628 views User admin is attempting to create a grade.
+INFO 2024-11-20 11:01:39,630 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 11:01:40,827 views Assigning permissions for action: create
+WARNING 2024-11-20 11:01:40,827 log Forbidden: /grades/
+INFO 2024-11-20 11:01:42,027 views Assigning permissions for action: list
+INFO 2024-11-20 11:01:42,027 views Fetching grades for user: teacher
+INFO 2024-11-20 11:01:42,027 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 11:01:42,030 views Assigning permissions for action: create
+INFO 2024-11-20 11:01:42,030 views User teacher is attempting to create a grade.
+INFO 2024-11-20 11:01:42,032 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 11:01:43,222 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:01:43,223 views User admin is attempting to delete a grade.
+INFO 2024-11-20 11:01:43,223 views Fetching grades for user: admin
+INFO 2024-11-20 11:01:43,223 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:01:43,224 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:01:43,224 views Fetching grades for user: admin
+INFO 2024-11-20 11:01:43,224 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:01:43,224 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:01:43,225 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 11:01:44,413 views Assigning permissions for action: destroy
+WARNING 2024-11-20 11:01:44,413 log Forbidden: /grades/1/
+INFO 2024-11-20 11:01:45,598 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:01:45,598 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 11:01:45,598 views Fetching grades for user: teacher
+INFO 2024-11-20 11:01:45,599 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 11:01:45,599 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:01:45,599 views Fetching grades for user: teacher
+INFO 2024-11-20 11:01:45,599 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 11:01:45,600 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:01:45,601 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 11:01:46,815 views Assigning permissions for action: list
+INFO 2024-11-20 11:01:46,816 views Fetching grades for user: admin
+INFO 2024-11-20 11:01:46,816 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:01:48,009 views Assigning permissions for action: list
+INFO 2024-11-20 11:01:48,010 views Fetching grades for user: student
+INFO 2024-11-20 11:01:48,010 views User student is a student. Returning their grades.
+INFO 2024-11-20 11:01:49,206 views Assigning permissions for action: list
+INFO 2024-11-20 11:01:49,206 views Fetching grades for user: teacher
+INFO 2024-11-20 11:01:49,206 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 11:01:50,406 views Assigning permissions for action: partial_update
+INFO 2024-11-20 11:01:50,407 views User admin is attempting to update a grade.
+INFO 2024-11-20 11:01:50,407 views Fetching grades for user: admin
+INFO 2024-11-20 11:01:50,407 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:01:50,408 views Assigning permissions for action: partial_update
+INFO 2024-11-20 11:01:50,408 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+WARNING 2024-11-20 11:01:51,318 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-20 11:01:52,306 log Too Many Requests: /auth/jwt/create/
+INFO 2024-11-20 11:07:38,775 views Assigning permissions for action: partial_update
+INFO 2024-11-20 11:07:38,776 views User admin is attempting to update a grade.
+INFO 2024-11-20 11:07:38,776 views Fetching grades for user: admin
+INFO 2024-11-20 11:07:38,776 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:07:38,777 views Assigning permissions for action: partial_update
+INFO 2024-11-20 11:07:38,780 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+INFO 2024-11-20 11:07:39,977 views Assigning permissions for action: partial_update
+WARNING 2024-11-20 11:07:39,978 log Forbidden: /grades/1/
+INFO 2024-11-20 11:07:41,167 views Assigning permissions for action: partial_update
+INFO 2024-11-20 11:07:41,168 views User teacher is attempting to update a grade.
+INFO 2024-11-20 11:07:41,168 views Fetching grades for user: teacher
+INFO 2024-11-20 11:07:41,168 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 11:07:41,169 views Assigning permissions for action: partial_update
+INFO 2024-11-20 11:07:41,170 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+INFO 2024-11-20 11:07:57,314 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-20 11:07:57,888 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 11:08:00,538 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-20 11:08:01,095 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 11:08:02,715 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-20 11:08:03,287 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 11:08:08,764 views Assigning permissions for action: list
+INFO 2024-11-20 11:08:08,765 views Fetching grades for user: admin
+INFO 2024-11-20 11:08:08,765 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:08:08,768 views Assigning permissions for action: create
+INFO 2024-11-20 11:08:08,769 views User admin is attempting to create a grade.
+INFO 2024-11-20 11:08:08,771 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 11:08:09,988 views Assigning permissions for action: create
+WARNING 2024-11-20 11:08:09,988 log Forbidden: /grades/
+INFO 2024-11-20 11:08:11,199 views Assigning permissions for action: list
+INFO 2024-11-20 11:08:11,200 views Fetching grades for user: teacher
+INFO 2024-11-20 11:08:11,200 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 11:08:11,202 views Assigning permissions for action: create
+INFO 2024-11-20 11:08:11,202 views User teacher is attempting to create a grade.
+INFO 2024-11-20 11:08:11,204 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 11:08:12,404 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:08:12,405 views User admin is attempting to delete a grade.
+INFO 2024-11-20 11:08:12,405 views Fetching grades for user: admin
+INFO 2024-11-20 11:08:12,405 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:08:12,405 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:08:12,405 views Fetching grades for user: admin
+INFO 2024-11-20 11:08:12,405 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:08:12,406 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:08:12,407 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 11:08:13,609 views Assigning permissions for action: destroy
+WARNING 2024-11-20 11:08:13,609 log Forbidden: /grades/1/
+INFO 2024-11-20 11:08:14,817 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:08:14,818 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 11:08:14,818 views Fetching grades for user: teacher
+INFO 2024-11-20 11:08:14,818 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 11:08:14,819 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:08:14,819 views Fetching grades for user: teacher
+INFO 2024-11-20 11:08:14,819 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 11:08:14,819 views Assigning permissions for action: destroy
+INFO 2024-11-20 11:08:14,820 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 11:08:16,020 views Assigning permissions for action: list
+INFO 2024-11-20 11:08:16,020 views Fetching grades for user: admin
+INFO 2024-11-20 11:08:16,020 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:08:17,223 views Assigning permissions for action: list
+INFO 2024-11-20 11:08:17,223 views Fetching grades for user: student
+INFO 2024-11-20 11:08:17,224 views User student is a student. Returning their grades.
+INFO 2024-11-20 11:08:18,423 views Assigning permissions for action: list
+INFO 2024-11-20 11:08:18,424 views Fetching grades for user: teacher
+INFO 2024-11-20 11:08:18,424 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 11:08:19,620 views Assigning permissions for action: partial_update
+INFO 2024-11-20 11:08:19,620 views User admin is attempting to update a grade.
+INFO 2024-11-20 11:08:19,620 views Fetching grades for user: admin
+INFO 2024-11-20 11:08:19,620 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 11:08:19,621 views Assigning permissions for action: partial_update
+INFO 2024-11-20 11:08:19,622 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+INFO 2024-11-20 11:08:20,824 views Assigning permissions for action: partial_update
+WARNING 2024-11-20 11:08:20,824 log Forbidden: /grades/1/
+INFO 2024-11-20 11:08:22,015 views Assigning permissions for action: partial_update
+INFO 2024-11-20 11:08:22,015 views User teacher is attempting to update a grade.
+INFO 2024-11-20 11:08:22,016 views Fetching grades for user: teacher
+INFO 2024-11-20 11:08:22,016 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 11:08:22,016 views Assigning permissions for action: partial_update
+INFO 2024-11-20 11:08:22,017 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}

@@ -2,11 +2,14 @@ from rest_framework.permissions import BasePermission
 
 class IsStudent(BasePermission):
     def has_permission(self, request, view):
-        return request.user.role == 'student'
+        if request.user.is_authenticated:
+            return request.user.role == 'student'
 class IsTeacher(BasePermission):
     def has_permission(self, request, view):
-        return request.user.role == 'teacher'
+        if request.user.is_authenticated:
+            return request.user.role == 'teacher'
     
 class IsAdmin(BasePermission):
     def has_permission(self, request, view):
-        return request.user.role == 'admin'
+        if request.user.is_authenticated:
+            return request.user.role == 'admin'

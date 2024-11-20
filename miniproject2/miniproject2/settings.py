@@ -50,10 +50,8 @@ INSTALLED_APPS = [
     'drf_yasg',
     'celery',
     'django_celery_beat',
-    'google_analytics',
 
 
-    'analytics',
     'attendance',
     'courses',
     'grades',
@@ -71,8 +69,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'analytics.middleware.ApiRequestLoggingMiddleware',
-
 ]
 
 ROOT_URLCONF = 'miniproject2.urls'
@@ -100,30 +96,30 @@ WSGI_APPLICATION = 'miniproject2.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # },
-    # 'analytics': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'analytics.sqlite3',
-    # },
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_DEFAULT_NAME'),  # Retrieves the value from environment variable
-        'USER': os.environ.get('DB_DEFAULT_USER'),  # Retrieves the value from environment variable
-        'PASSWORD': os.environ.get('DB_DEFAULT_PASSWORD'),  # Retrieves the value from environment variable
-        'HOST': os.environ.get('DB_HOST', 'localhost'),  # Defaults to localhost if not set
-        'PORT': os.environ.get('DB_PORT', '5432'),  # Defaults to 5432 if not set
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     },
     'analytics': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_ANALYTICS_NAME'),  # Retrieves the value from environment variable
-        'USER': os.environ.get('DB_ANALYTICS_USER'),  # Retrieves the value from environment variable
-        'PASSWORD': os.environ.get('DB_ANALYTICS_PASSWORD'),  # Retrieves the value from environment variable
-        'HOST': os.environ.get('DB_HOST', 'localhost'),  # Defaults to localhost if not set
-        'PORT': os.environ.get('DB_PORT', '5432'),  # Defaults to 5432 if not set
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'analytics.sqlite3',
     },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': os.environ.get('DB_DEFAULT_NAME'),  # Retrieves the value from environment variable
+    #     'USER': os.environ.get('DB_DEFAULT_USER'),  # Retrieves the value from environment variable
+    #     'PASSWORD': os.environ.get('DB_DEFAULT_PASSWORD'),  # Retrieves the value from environment variable
+    #     'HOST': os.environ.get('DB_HOST', 'localhost'),  # Defaults to localhost if not set
+    #     'PORT': os.environ.get('DB_PORT', '5432'),  # Defaults to 5432 if not set
+    # },
+    # 'analytics': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': os.environ.get('DB_ANALYTICS_NAME'),  # Retrieves the value from environment variable
+    #     'USER': os.environ.get('DB_ANALYTICS_USER'),  # Retrieves the value from environment variable
+    #     'PASSWORD': os.environ.get('DB_ANALYTICS_PASSWORD'),  # Retrieves the value from environment variable
+    #     'HOST': os.environ.get('DB_HOST', 'localhost'),  # Defaults to localhost if not set
+    #     'PORT': os.environ.get('DB_PORT', '5432'),  # Defaults to 5432 if not set
+    # },
 }
 
 
@@ -190,8 +186,8 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle',
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '5/minute',  # 5 requests per minute for anonymous users
-        'user': '10/minute',  # 10 requests per minute for authenticated users
+        'anon': '15/minute',  # 5 requests per minute for anonymous users
+        'user': '30/minute',  # 10 requests per minute for authenticated users
     },
 }
 
@@ -272,4 +268,3 @@ LOGGING = {
 
 USE_DEPRECATED_PYTZ = True
 
-DATABASE_ROUTERS = ['analytics.db_routers.AnalyticsRouter']
