@@ -15,4 +15,4 @@ class Grade(models.Model):
     date = models.DateField(auto_now=True)
 
     def __str__(self):
-        return f"{self.student} - {self.course} - {self.grade}"
+        return f"{self.student.user.username} - {self.course.name} - {self.grade}"

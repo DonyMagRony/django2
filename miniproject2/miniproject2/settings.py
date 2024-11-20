@@ -12,15 +12,21 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+SECRET_KEY= os.environ.get('SECRET_KEY')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-q5^_94fxv&(3t7cf0x^)v$)j&*5q98kuzu)bb8b2t4f+^f7%%t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -44,9 +50,10 @@ INSTALLED_APPS = [
     'drf_yasg',
     'celery',
     'django_celery_beat',
+    'google_analytics',
 
 
-
+    'analytics',
     'attendance',
     'courses',
     'grades',
@@ -64,6 +71,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'analytics.middleware.ApiRequestLoggingMiddleware',
+
 ]
 
 ROOT_URLCONF = 'miniproject2.urls'
@@ -91,10 +100,30 @@ WSGI_APPLICATION = 'miniproject2.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # },
+    # 'analytics': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'analytics.sqlite3',
+    # },
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_DEFAULT_NAME'),  # Retrieves the value from environment variable
+        'USER': os.environ.get('DB_DEFAULT_USER'),  # Retrieves the value from environment variable
+        'PASSWORD': os.environ.get('DB_DEFAULT_PASSWORD'),  # Retrieves the value from environment variable
+        'HOST': os.environ.get('DB_HOST', 'localhost'),  # Defaults to localhost if not set
+        'PORT': os.environ.get('DB_PORT', '5432'),  # Defaults to 5432 if not set
+    },
+    'analytics': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_ANALYTICS_NAME'),  # Retrieves the value from environment variable
+        'USER': os.environ.get('DB_ANALYTICS_USER'),  # Retrieves the value from environment variable
+        'PASSWORD': os.environ.get('DB_ANALYTICS_PASSWORD'),  # Retrieves the value from environment variable
+        'HOST': os.environ.get('DB_HOST', 'localhost'),  # Defaults to localhost if not set
+        'PORT': os.environ.get('DB_PORT', '5432'),  # Defaults to 5432 if not set
+    },
 }
 
 
@@ -152,10 +181,19 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
-        'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],   
-}   
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle',
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '5/minute',  # 5 requests per minute for anonymous users
+        'user': '10/minute',  # 10 requests per minute for authenticated users
+    },
+}
 
 SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
@@ -165,7 +203,11 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
 }
 
-
+DJOSER = {
+    'USER_ID_FIELD': 'username',  # or 'id' depending on your setup
+    'JWT_AUTH_HEADER_PREFIX': 'Bearer',  # Specifies the prefix for the Authorization header, which is "Bearer"
+    'JWT_AUTH_COOKIE': None,  # If you want to store tokens in cookies, otherwise set to None
+}
 
 CELERY_BROKER_URL = 'redis://localhost:6380/0'  # Example using Redis
 CELERY_RESULT_BACKEND = 'redis://localhost:6380/1'  # Example result backend
@@ -229,3 +271,5 @@ LOGGING = {
 }
 
 USE_DEPRECATED_PYTZ = True
+
+DATABASE_ROUTERS = ['analytics.db_routers.AnalyticsRouter']

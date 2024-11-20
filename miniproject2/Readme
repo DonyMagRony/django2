@@ -1,0 +1,11 @@
+this is project 
+tests applied on cources and users app 
+commands to run
+poetry install
+redis-server --port 6380
+celery -A miniproject2 worker --loglevel=info
+celery -A miniproject2 beat --loglevel=info
+python manage.py runserver
+
+be sure that postgresql databases created 
+

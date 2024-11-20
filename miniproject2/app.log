@@ -813,6 +813,7 @@ INFO 2024-11-19 15:43:07,181 views User role updated: testuser (ID: 2) - student
 WARNING 2024-11-19 15:43:07,777 log Forbidden: /users2/role/
 INFO 2024-11-19 15:43:08,073 views User role updated: admin (ID: 1) - admin → teacher
 WARNING 2024-11-19 15:43:08,375 log Forbidden: /users1/role/
+<<<<<<< HEAD
 INFO 2024-11-20 06:15:28,255 views New user registered: testuser (ID: 1)
 INFO 2024-11-20 06:15:28,867 views User role updated: testuser (ID: 2) - student → teacher
 WARNING 2024-11-20 06:15:29,475 log Forbidden: /users2/role/
@@ -873,3 +874,263 @@ INFO 2024-11-20 06:28:19,161 views User role updated: testuser (ID: 2) - student
 WARNING 2024-11-20 06:28:19,777 log Forbidden: /users2/role/
 INFO 2024-11-20 06:28:20,075 views User role updated: admin (ID: 1) - admin → teacher
 WARNING 2024-11-20 06:28:20,383 log Forbidden: /users1/role/
+=======
+WARNING 2024-11-19 16:08:38,546 log Not Found: /api/grades/
+WARNING 2024-11-19 16:08:39,528 log Not Found: /api/grades/
+WARNING 2024-11-19 16:08:40,431 log Not Found: /api/grades/
+WARNING 2024-11-19 16:11:03,227 log Unauthorized: /api/grades/
+WARNING 2024-11-19 16:11:04,216 log Unauthorized: /api/grades/
+WARNING 2024-11-19 16:11:05,112 log Unauthorized: /api/grades/
+WARNING 2024-11-19 16:12:29,887 log Unauthorized: /grades/
+WARNING 2024-11-19 16:12:30,889 log Unauthorized: /grades/
+WARNING 2024-11-19 16:12:31,791 log Unauthorized: /grades/
+WARNING 2024-11-19 16:13:58,355 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:13:59,679 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:14:00,868 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:15:22,210 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:15:23,495 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:15:24,694 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:16:35,820 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:16:37,098 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:16:38,299 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:17:51,725 log Unauthorized: /auth/jwt/create/
+INFO 2024-11-19 16:18:15,759 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 16:21:03,726 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:21:51,025 log Unauthorized: /auth/jwt/create/
+INFO 2024-11-19 16:23:55,099 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-19 16:23:55,711 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 16:29:00,558 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-19 16:29:01,132 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 16:34:08,858 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-19 16:34:09,415 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 16:34:13,030 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-19 16:34:13,568 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 16:34:17,877 views Cache miss for courses list
+INFO 2024-11-19 16:34:18,182 views Cache miss for courses list
+INFO 2024-11-19 16:34:18,780 views Cache invalidated after creating a course
+WARNING 2024-11-19 16:34:19,078 log Forbidden: /courses/
+INFO 2024-11-19 16:34:19,975 views Cache invalidated after updating a course
+INFO 2024-11-19 16:34:20,276 views Cache invalidated after updating a course
+INFO 2024-11-19 16:34:20,587 views Cache invalidated after deleting a course
+INFO 2024-11-19 16:34:21,196 views Cache invalidated after creating a course
+INFO 2024-11-19 16:34:21,197 views Cache miss for courses list
+INFO 2024-11-19 16:34:21,201 views Cache hit for courses list
+INFO 2024-11-19 16:34:21,204 views Cache invalidated after updating a course
+INFO 2024-11-19 16:34:21,205 views Cache miss for courses list
+INFO 2024-11-19 16:34:21,807 views Cache invalidated after creating a course
+WARNING 2024-11-19 16:34:21,808 log Forbidden: /courses/
+WARNING 2024-11-19 16:34:35,186 log Unauthorized: /auth/jwt/create/
+INFO 2024-11-19 16:39:00,367 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 16:39:01,016 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 16:39:03,446 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 16:39:04,017 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 16:39:09,469 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 16:39:10,014 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 16:39:33,294 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:43:26,234 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:43:42,455 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:43:57,597 log Unauthorized: /auth/jwt/create/
+INFO 2024-11-19 16:56:35,392 views Cache miss for courses list
+INFO 2024-11-19 16:56:35,696 views Cache miss for courses list
+INFO 2024-11-19 16:56:36,302 views Cache invalidated after creating a course
+WARNING 2024-11-19 16:56:36,604 log Forbidden: /courses/
+INFO 2024-11-19 16:56:37,511 views Cache invalidated after updating a course
+INFO 2024-11-19 16:56:37,819 views Cache invalidated after updating a course
+WARNING 2024-11-19 16:56:45,780 log Unauthorized: /auth/jwt/create/
+INFO 2024-11-19 16:58:19,220 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 16:58:27,950 basehttp "POST /auth/jwt/create/ HTTP/1.1" 200 483
+INFO 2024-11-19 16:58:32,719 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-19 16:58:32,749 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:32,749 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:32,750 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:32,750 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:32,751 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:32,751 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:32,752 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:32,795 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css.map HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:32,875 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js.map HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:32,905 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js.map HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:32,965 views Fetching grades for user: AnonymousUser
+INFO 2024-11-19 16:58:32,971 views Fetching grades for user: AnonymousUser
+INFO 2024-11-19 16:58:32,976 views Fetching grades for user: AnonymousUser
+INFO 2024-11-19 16:58:32,980 views Fetching grades for user: AnonymousUser
+INFO 2024-11-19 16:58:32,998 basehttp "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 304 0
+INFO 2024-11-19 16:58:33,025 views Fetching grades for user: AnonymousUser
+INFO 2024-11-19 16:58:33,055 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 30478
+WARNING 2024-11-19 16:58:45,786 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 16:58:45,786 basehttp "POST /auth/jwt/create/ HTTP/1.1" 401 63
+INFO 2024-11-19 16:58:57,890 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16503
+INFO 2024-11-19 16:58:57,928 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 16:58:59,878 basehttp "GET /admin/users/user/1/change/ HTTP/1.1" 200 31971
+INFO 2024-11-19 16:58:59,909 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 16:59:04,761 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16503
+INFO 2024-11-19 16:59:04,799 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 16:59:05,771 basehttp "GET /admin/students/student/add/ HTTP/1.1" 200 17162
+INFO 2024-11-19 16:59:05,808 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 16:59:11,032 basehttp "GET /admin/users/user/add/ HTTP/1.1" 200 31595
+INFO 2024-11-19 16:59:11,063 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 16:59:21,477 basehttp "POST /admin/users/user/add/ HTTP/1.1" 200 31802
+INFO 2024-11-19 16:59:21,512 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 16:59:31,346 basehttp "POST /admin/users/user/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 16:59:31,378 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16948
+INFO 2024-11-19 16:59:31,459 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 16:59:32,839 basehttp "GET /admin/users/user/5/change/ HTTP/1.1" 200 31818
+INFO 2024-11-19 16:59:32,864 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:01:14,240 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:01:14,870 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:01:18,584 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:01:26,702 basehttp "GET /admin/users/user/5/change/ HTTP/1.1" 200 31818
+INFO 2024-11-19 17:01:26,722 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,735 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,735 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,737 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,737 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,739 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:01:26,744 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,744 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,744 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,745 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,745 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,767 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,801 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,802 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,850 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,852 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,912 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:26,915 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:29,659 basehttp "GET /admin/users/user/add/ HTTP/1.1" 200 31595
+INFO 2024-11-19 17:01:29,691 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:29,692 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:29,692 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:29,693 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:29,696 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:01:29,698 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:29,756 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:41,722 basehttp "POST /admin/users/user/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 17:01:41,756 basehttp "GET /admin/users/user/ HTTP/1.1" 200 17199
+INFO 2024-11-19 17:01:41,816 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:41,823 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:01:41,828 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-11-19 17:01:43,057 basehttp "GET /admin/users/user/6/change/ HTTP/1.1" 200 31813
+INFO 2024-11-19 17:01:43,085 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:03:06,568 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:03:07,177 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:03:08,752 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:03:09,325 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:03:16,770 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:03:26,995 basehttp "GET /admin/users/user/ HTTP/1.1" 200 17009
+INFO 2024-11-19 17:03:30,502 basehttp "GET /admin/users/user/6/change/ HTTP/1.1" 200 31813
+INFO 2024-11-19 17:03:30,533 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:03:32,603 basehttp "GET /admin/users/user/6/delete/ HTTP/1.1" 200 14378
+INFO 2024-11-19 17:03:32,652 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2024-11-19 17:03:33,682 basehttp "POST /admin/users/user/6/delete/ HTTP/1.1" 302 0
+INFO 2024-11-19 17:03:33,722 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16907
+INFO 2024-11-19 17:03:33,795 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:03:34,812 basehttp "GET /admin/users/user/5/change/ HTTP/1.1" 200 31818
+INFO 2024-11-19 17:03:34,844 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:03:36,502 basehttp "GET /admin/users/user/5/delete/ HTTP/1.1" 200 14381
+INFO 2024-11-19 17:03:37,419 basehttp "POST /admin/users/user/5/delete/ HTTP/1.1" 302 0
+INFO 2024-11-19 17:03:37,451 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16654
+INFO 2024-11-19 17:03:37,525 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:03:39,467 basehttp "GET /admin/users/user/add/ HTTP/1.1" 200 31595
+INFO 2024-11-19 17:03:39,493 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:03:45,995 basehttp "POST /admin/users/user/add/ HTTP/1.1" 200 31802
+INFO 2024-11-19 17:03:46,025 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:03:50,124 basehttp "POST /admin/users/user/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 17:03:50,155 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16948
+INFO 2024-11-19 17:03:50,231 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:03:51,458 basehttp "GET /admin/users/user/7/change/ HTTP/1.1" 200 31818
+INFO 2024-11-19 17:03:51,485 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:07:56,846 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:07:57,423 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:07:58,985 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:07:59,575 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:08:01,181 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:08:01,752 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:08:10,866 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:08:17,819 basehttp "GET /admin/users/user/ HTTP/1.1" 200 16757
+INFO 2024-11-19 17:08:19,993 basehttp "GET /admin/users/user/add/ HTTP/1.1" 200 31595
+INFO 2024-11-19 17:08:20,030 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:08:27,806 basehttp "POST /admin/users/user/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 17:08:27,844 basehttp "GET /admin/users/user/ HTTP/1.1" 200 17199
+INFO 2024-11-19 17:08:27,923 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:08:29,465 basehttp "GET /admin/users/user/8/change/ HTTP/1.1" 200 31813
+INFO 2024-11-19 17:08:29,494 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:09:11,698 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:09:12,312 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:09:16,993 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:09:17,627 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:09:24,313 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/models.py changed, reloading.
+INFO 2024-11-19 17:09:24,923 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:09:27,219 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/models.py changed, reloading.
+INFO 2024-11-19 17:09:27,753 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:09:35,491 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:09:36,097 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:09:41,562 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:09:42,144 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:09:44,569 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:09:45,135 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:09:48,767 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/models.py changed, reloading.
+INFO 2024-11-19 17:09:49,423 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:09:58,798 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:10:29,031 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:10:30,904 basehttp "GET /admin/users/user/ HTTP/1.1" 200 17009
+INFO 2024-11-19 17:10:30,950 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:10:30,999 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-11-19 17:10:33,545 basehttp "GET /admin/users/user/add/ HTTP/1.1" 200 31595
+INFO 2024-11-19 17:10:33,579 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:10:46,338 basehttp "POST /admin/users/user/add/ HTTP/1.1" 302 0
+INFO 2024-11-19 17:10:46,369 basehttp "GET /admin/users/user/ HTTP/1.1" 200 17451
+INFO 2024-11-19 17:10:46,448 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:10:47,945 basehttp "GET /admin/users/user/9/change/ HTTP/1.1" 200 31813
+INFO 2024-11-19 17:10:47,973 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-11-19 17:26:11,474 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/models.py changed, reloading.
+INFO 2024-11-19 17:26:12,099 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:26:18,790 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:26:19,359 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-19 17:26:26,540 log Unauthorized: /auth/jwt/create/
+INFO 2024-11-19 17:26:32,358 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:26:32,929 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 17:26:51,084 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/serializers.py changed, reloading.
+INFO 2024-11-19 17:26:51,708 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 18:40:38,582 views Cache miss for courses list
+INFO 2024-11-19 18:40:38,888 views Cache miss for courses list
+INFO 2024-11-19 18:40:39,503 views Cache invalidated after creating a course
+WARNING 2024-11-19 18:40:39,806 log Forbidden: /courses/
+INFO 2024-11-19 18:40:40,714 views Cache invalidated after updating a course
+INFO 2024-11-19 18:40:41,024 views Cache invalidated after updating a course
+INFO 2024-11-19 18:40:41,331 views Cache invalidated after deleting a course
+INFO 2024-11-19 18:40:41,934 views Cache invalidated after creating a course
+INFO 2024-11-19 18:40:41,935 views Cache miss for courses list
+INFO 2024-11-19 18:40:41,939 views Cache hit for courses list
+INFO 2024-11-19 18:40:41,943 views Cache invalidated after updating a course
+INFO 2024-11-19 18:40:41,944 views Cache miss for courses list
+INFO 2024-11-19 18:40:42,564 views Cache invalidated after creating a course
+WARNING 2024-11-19 18:40:42,565 log Forbidden: /courses/
+WARNING 2024-11-19 18:40:45,006 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 18:40:46,299 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 18:40:47,509 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 18:40:48,710 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 18:40:49,921 log Unauthorized: /auth/jwt/create/
+WARNING 2024-11-19 18:40:50,827 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-19 18:40:51,729 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-19 18:40:52,635 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-19 18:40:53,541 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-19 18:40:54,475 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-19 18:40:55,391 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-19 18:40:56,317 log Too Many Requests: /auth/jwt/create/
+WARNING 2024-11-19 18:40:57,272 log Too Many Requests: /usersregister/
+INFO 2024-11-19 18:40:57,904 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-19 18:40:58,521 log Forbidden: /users2/role/
+INFO 2024-11-19 18:40:58,829 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-19 18:40:59,140 log Forbidden: /users1/role/
+INFO 2024-11-19 18:44:25,235 views New user registered: testuser (ID: 1)
+INFO 2024-11-19 18:44:25,847 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-19 18:44:26,447 log Forbidden: /users2/role/
+INFO 2024-11-19 18:44:26,754 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-19 18:44:27,054 log Forbidden: /users1/role/
+INFO 2024-11-19 18:47:32,618 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 18:55:04,236 autoreload Watching for file changes with StatReloader
+INFO 2024-11-19 19:23:19,560 autoreload Watching for file changes with StatReloader
+>>>>>>> origin/master
+INFO 2024-11-20 06:44:42,980 autoreload Watching for file changes with StatReloader
