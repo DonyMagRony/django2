@@ -1,11 +1,38 @@
-this is project 
-tests applied on cources and users app 
-commands to run
+Setup Instructions
+1. Install Project Dependencies
+To install all the required dependencies, run:
+
+
 poetry install
+This will install the necessary packages as specified in the pyproject.toml file.
+
+2. Setup PostgreSQL Databases
+Ensure PostgreSQL is installed and running. You can create the necessary databases by running the following commands in your PostgreSQL terminal:
+
+sql
+Copy code
+CREATE DATABASE default_db_name;
+CREATE DATABASE analytics_db_name;
+
+Replace default_db_name and analytics_db_name with the actual names of your databases.
+Alternatively, you can configure the databases using environment variables as detailed in the project settings.
+
+3. Start Redis Server
+Start the Redis server by running the following command:
+
 redis-server --port 6380
+This will start Redis on port 6380.
+
+4. Run Celery Worker and Beat
+Celery is used for asynchronous task processing. Start the Celery worker by running:
+
+
 celery -A miniproject2 worker --loglevel=info
+In a separate terminal, run the Celery beat scheduler:
 celery -A miniproject2 beat --loglevel=info
+
+5. Run the Django Development Server
+To run the Django development server, execute the following command:
+
 python manage.py runserver
-
-be sure that postgresql databases created 
-
+The application will be accessible at http://127.0.0.1:8000/.

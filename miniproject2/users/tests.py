@@ -50,7 +50,7 @@ def test_register_user():
     response = client.post("/usersregister/", data)  # Corrected URL
     assert response.status_code == 201
     assert response.data["username"] == "testuser"
-
+ 
 @pytest.mark.django_db
 def test_update_user_role_as_admin():
     client = APIClient()
@@ -88,3 +88,4 @@ def test_non_admin_cannot_access_update_role():
     client.force_authenticate(user=non_admin_user)
     response = client.patch("/users1/role/", {"role": "teacher"})
     assert response.status_code == 403
+
