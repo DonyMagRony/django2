@@ -1,5 +1,5 @@
 from django.test import TestCase
-from rest_framework.test import APIClient
+from rest_framework.test import APIClient,APITestCase
 from rest_framework import status
 from users.models import User
 from django.core.exceptions import ValidationError
@@ -9,6 +9,9 @@ from courses.models import Course
 from grades.models import Grade
 from users.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
+import json
+
+
 class GradeModelTest(TestCase):
     def setUp(self):
         # Set up the test data
@@ -30,14 +33,21 @@ class GradeModelTest(TestCase):
         self.assertEqual(str(self.grade), f"{self.student.user.username} - {self.course.name} - {self.grade.grade}")
 
 
-class GradeViewSetTest(TestCase):
+class GradeAPITestCase(APITestCase):
     def setUp(self):
         # Set up the test data
-        self.student_user = User.objects.create_user(username='student', email='student@example.com', password='studentpassword', role="student",is_active=True)
+        self.student_user = User.objects.create_user(
+            username='student', email='student@example.com', password='studentpassword', role="student", is_active=True
+        )
         self.student = Student.objects.create(user=self.student_user, dob='2000-01-01')
         
-        self.admin_user = User.objects.create_user(username="admin", email="admin@example.com", password="adminpassword", role="admin",is_active=True)
-        self.teacher_user = User.objects.create_user(username="teacher", email="teacher@example.com", password="teacherpassword", role="teacher",is_active=True)
+        self.admin_user = User.objects.create_user(
+            username="admin", email="admin@example.com", password="adminpassword", role="admin", is_active=True
+        )
+        
+        self.teacher_user = User.objects.create_user(
+            username="teacher", email="teacher@example.com", password="teacherpassword", role="teacher", is_active=True
+        )
         
         self.course = Course.objects.create(name="Test Course", description="Test Course Description", professor=self.teacher_user)
         self.grade = Grade.objects.create(student=self.student, course=self.course, grade=90.0)
@@ -47,23 +57,35 @@ class GradeViewSetTest(TestCase):
 
     def get_authentication_headers(self, user):
         """Helper method to get auth headers for a user using Djoser JWT."""
-        response = self.client.post('/auth/jwt/create/', {
+        login_response = self.client.post('/auth/jwt/create/', {
             'username': user.username,
-            'password': user.password,
+            'password': 'studentpassword' if user == self.student_user else 'adminpassword' if user == self.admin_user else 'teacherpassword',
         })
-        print("Response:", response.data)  # Print the entire response data for inspection
 
-        if 'access' not in response.data:
-            raise Exception(f"Failed to obtain access token: {response.data}")
+        # Debugging response
+        print("Login Response:", login_response.data)
 
-        return {'Authorization': f"Bearer {response.data['access']}"}
+        # Check if the 'access' token exists
+        if 'access' not in login_response.data:
+            raise Exception(f"Failed to obtain access token for {user.role}: {login_response.data}")
+
+        # Return the headers for authorization
+        return {'Authorization': f"Bearer {login_response.data['access']}"}
 
     def test_grade_create_teacher(self):
         """Test that a teacher can create a grade."""
         data = {'student': self.student.id, 'course': self.course.id, 'grade': 95.0}
         headers = self.get_authentication_headers(self.teacher_user)
         response = self.client.post('/api/grades/', data, format='json', **headers)
+
+        # Assert the grade was successfully created
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+
+        # Parse and validate response data
+        response_data = json.loads(response.content)
+        self.assertEqual(response_data['student'], self.student.id)
+        self.assertEqual(response_data['course'], self.course.id)
+        self.assertEqual(response_data['grade'], 95.0)
 
     def test_grade_create_student(self):
         """Test that a student cannot create a grade."""
