@@ -8,6 +8,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from courses.models import Course, Enrollment
 from courses.serializers import CourseSerializer, EnrollmentSerializer
 from users.permissions import IsAdmin,IsStudent
+from drf_yasg.utils import swagger_auto_schema
 
 import logging
 
@@ -32,6 +33,12 @@ class CourseViewSet(viewsets.ModelViewSet):
             self.permission_classes = [IsAuthenticated, IsAdmin]
         return super().get_permissions()
     
+
+    @swagger_auto_schema(
+        operation_summary="List all courses",
+        operation_description="Retrieve a list of courses, with caching enabled to improve performance.",
+        responses={200: CourseSerializer(many=True)}
+    )
     def list(self, request, *args, **kwargs):
         """
         Override the list method to add caching for the courses list.
@@ -49,6 +56,14 @@ class CourseViewSet(viewsets.ModelViewSet):
         cache.set(cache_key, serializer.data, timeout=3600)  # Cache for 1 hour
         return Response(serializer.data)
 
+    @swagger_auto_schema(
+        operation_summary="Create a course",
+        operation_description="Create a new course. Only accessible to admin users.",
+        responses={
+            201: CourseSerializer,
+            403: "Forbidden: Admin permission required."
+        }
+    )
     def perform_create(self, serializer):
         """
         Clear cache when a course is created.
@@ -58,6 +73,15 @@ class CourseViewSet(viewsets.ModelViewSet):
         logger.info("Cache invalidated after creating a course")
         return instance
 
+    @swagger_auto_schema(
+        operation_summary="Update a course",
+        operation_description="Update an existing course. Only accessible to admin users.",
+        responses={
+            200: CourseSerializer,
+            403: "Forbidden: Admin permission required.",
+            404: "Not Found"
+        }
+    )
     def perform_update(self, serializer):
         """
         Clear cache when a course is updated.
@@ -67,6 +91,15 @@ class CourseViewSet(viewsets.ModelViewSet):
         logger.info("Cache invalidated after updating a course")
         return instance
 
+    @swagger_auto_schema(
+        operation_summary="Delete a course",
+        operation_description="Delete a course. Only accessible to admin users.",
+        responses={
+            204: "No Content",
+            403: "Forbidden: Admin permission required.",
+            404: "Not Found"
+        }
+    )
     def perform_destroy(self, instance):
         """
         Clear cache when a course is deleted.
@@ -97,6 +130,11 @@ class EnrollmentViewSet(viewsets.ModelViewSet):
             self.permission_classes = [IsStudent | IsAdmin]
         return super().get_permissions()
 
+    @swagger_auto_schema(
+        operation_summary="List enrollments",
+        operation_description="Retrieve a list of enrollments. Admins can view all, students can view their own.",
+        responses={200: EnrollmentSerializer(many=True)}
+    )
     def get_queryset(self):
         """
         Return enrollments based on the user's role.
@@ -109,7 +147,16 @@ class EnrollmentViewSet(viewsets.ModelViewSet):
         
         logger.info(f"Admin {user.username} is retrieving all enrollments.")
         return super().get_queryset()
-
+    
+    @swagger_auto_schema(
+        operation_summary="Create an enrollment",
+        operation_description="Create a new enrollment. Students can enroll themselves, and admins can create enrollments for any student.",
+        responses={
+            201: EnrollmentSerializer,
+            403: "Forbidden: Permission denied."
+        }
+    )
+    
     def perform_create(self, serializer):
         """
         Handle creation of enrollments with logging.
@@ -123,6 +170,51 @@ class EnrollmentViewSet(viewsets.ModelViewSet):
             instance = serializer.save()
             logger.info(f"Admin {user.username} created an enrollment for student {instance.student} in course {instance.course}.")
 
+
+    @swagger_auto_schema(
+        operation_summary="Retrieve an enrollment",
+        operation_description="Retrieve the details of a specific enrollment. Admins can access all, students can access their own.",
+        responses={
+            200: EnrollmentSerializer,
+            403: "Forbidden: Permission denied.",
+            404: "Not Found"
+        }
+    )
+    def retrieve(self, request, *args, **kwargs):
+        return super().retrieve(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_summary="Create an enrollment",
+        operation_description="Create a new enrollment. Students can enroll themselves, and admins can create enrollments for any student.",
+        responses={
+            201: EnrollmentSerializer,
+            403: "Forbidden: Permission denied."
+        }
+    )
+    def create(self, request, *args, **kwargs):
+        return super().create(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_summary="Update an enrollment",
+        operation_description="Update an existing enrollment. Only accessible to admin users.",
+        responses={
+            200: EnrollmentSerializer,
+            403: "Forbidden: Admin permission required.",
+            404: "Not Found"
+        }
+    )
+    def update(self, request, *args, **kwargs):
+        return super().update(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_summary="Delete an enrollment",
+        operation_description="Delete an enrollment. Only accessible to admin users.",
+        responses={
+            204: "No Content",
+            403: "Forbidden: Admin permission required.",
+            404: "Not Found"
+        }
+    )
     def destroy(self, request, *args, **kwargs):
         """
         Handle deletion of enrollments with logging.

@@ -5,12 +5,16 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import Student
 from .serializers import StudentSerializer
 from users.permissions import IsStudent  # Import the custom permission
-
+from drf_yasg.utils import swagger_auto_schema
 class StudentViewSet(viewsets.ModelViewSet):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
     permission_classes = [IsAuthenticated]  # Ensure user is authenticated
 
+    @swagger_auto_schema(
+        operation_description="Retrieve a student’s details.",
+        responses={200: StudentSerializer, 404: 'Not Found'},
+    )
     def retrieve(self, request, *args, **kwargs):
         student_id = kwargs.get("pk")
         cache_key = f"student_{student_id}"
@@ -25,9 +29,27 @@ class StudentViewSet(viewsets.ModelViewSet):
         cache.set(cache_key, serializer.data, timeout=3600)  # Cache for 1 hour
         return Response(serializer.data)
 
+    @swagger_auto_schema(
+        operation_description="Update student details and clear the cached data.",
+        responses={200: StudentSerializer, 400: 'Bad Request'}
+    )
     def perform_update(self, serializer):
         instance = serializer.save()
         cache.delete(f"student_{instance.id}")
+
+    
+    @swagger_auto_schema(
+        operation_description="List all students or the current student’s details.",
+        responses={200: StudentSerializer(many=True)},
+    )
+    def list(self, request, *args, **kwargs):
+        """
+        List all students or just the logged-in student's details based on permissions.
+        """
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data)
+
 
     def get_queryset(self):
         """

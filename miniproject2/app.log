@@ -3333,3 +3333,188 @@ INFO 2024-11-20 11:08:22,016 views Fetching grades for user: teacher
 INFO 2024-11-20 11:08:22,016 views User teacher is a teacher. Returning grades for their courses.
 INFO 2024-11-20 11:08:22,016 views Assigning permissions for action: partial_update
 INFO 2024-11-20 11:08:22,017 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+INFO 2024-11-20 11:22:48,081 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-20 11:22:48,671 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 11:22:49,990 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/users/urls.py changed, reloading.
+INFO 2024-11-20 11:22:50,535 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 12:00:11,028 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 12:02:10,216 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 12:03:24,433 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 12:04:33,659 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-20 12:04:34,275 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 12:04:36,896 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-20 12:04:37,493 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 12:04:41,370 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 12:18:10,037 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 12:18:50,727 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 12:19:39,283 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 13:37:01,021 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-20 13:37:03,398 log Not Found: /
+WARNING 2024-11-20 13:37:03,399 basehttp "GET / HTTP/1.1" 404 3561
+WARNING 2024-11-20 13:37:03,665 log Not Found: /favicon.ico
+WARNING 2024-11-20 13:37:03,666 basehttp "GET /favicon.ico HTTP/1.1" 404 3612
+ERROR 2024-11-20 13:37:08,105 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6380. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6380. Connection refused.
+ERROR 2024-11-20 13:37:08,110 basehttp "GET /swagger/ HTTP/1.1" 500 168224
+INFO 2024-11-20 13:38:06,268 autoreload Watching for file changes with StatReloader
+INFO 2024-11-20 13:38:09,471 basehttp "GET /swagger/ HTTP/1.1" 200 2225
+INFO 2024-11-20 13:38:09,508 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2024-11-20 13:38:09,516 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2024-11-20 13:38:09,518 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2024-11-20 13:38:09,518 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2024-11-20 13:38:09,520 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2024-11-20 13:38:09,520 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2024-11-20 13:38:09,520 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2024-11-20 13:38:09,990 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-20 13:38:09,991 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-20 13:38:09,992 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-20 13:38:09,993 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-20 13:38:09,993 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-20 13:38:09,994 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-20 13:38:09,995 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-20 13:38:09,995 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-20 13:38:10,034 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-20 13:38:10,035 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-20 13:38:10,064 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 30478
+WARNING 2024-11-20 13:38:20,781 log Unauthorized: /attendance/attendance/
+WARNING 2024-11-20 13:38:20,781 basehttp "GET /attendance/attendance/ HTTP/1.1" 401 58
+INFO 2024-11-20 13:43:41,424 views Cache miss for courses list
+INFO 2024-11-20 13:43:41,927 views Cache miss for courses list
+INFO 2024-11-20 13:43:42,918 views Cache invalidated after creating a course
+WARNING 2024-11-20 13:43:43,416 log Forbidden: /courses/
+INFO 2024-11-20 13:43:44,899 views Cache invalidated after updating a course
+INFO 2024-11-20 13:43:45,409 views Cache invalidated after updating a course
+INFO 2024-11-20 13:43:45,896 views Cache invalidated after deleting a course
+INFO 2024-11-20 13:43:46,633 views Cache invalidated after creating a course
+INFO 2024-11-20 13:43:46,634 views Cache miss for courses list
+INFO 2024-11-20 13:43:46,637 views Cache hit for courses list
+INFO 2024-11-20 13:43:46,640 views Cache invalidated after updating a course
+INFO 2024-11-20 13:43:46,642 views Cache miss for courses list
+INFO 2024-11-20 13:43:47,314 views Cache invalidated after creating a course
+WARNING 2024-11-20 13:43:47,315 log Forbidden: /courses/
+INFO 2024-11-20 13:43:49,815 views Assigning permissions for action: list
+INFO 2024-11-20 13:43:49,816 views Fetching grades for user: admin
+INFO 2024-11-20 13:43:49,816 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 13:43:49,818 views Assigning permissions for action: create
+INFO 2024-11-20 13:43:49,819 views User admin is attempting to create a grade.
+INFO 2024-11-20 13:43:49,822 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 13:43:51,013 views Assigning permissions for action: create
+WARNING 2024-11-20 13:43:51,014 log Forbidden: /grades/
+INFO 2024-11-20 13:43:52,202 views Assigning permissions for action: list
+INFO 2024-11-20 13:43:52,203 views Fetching grades for user: teacher
+INFO 2024-11-20 13:43:52,203 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 13:43:52,206 views Assigning permissions for action: create
+INFO 2024-11-20 13:43:52,206 views User teacher is attempting to create a grade.
+INFO 2024-11-20 13:43:52,208 views Grade created successfully: student - Test Course - 95.0
+INFO 2024-11-20 13:43:53,397 views Assigning permissions for action: destroy
+INFO 2024-11-20 13:43:53,398 views User admin is attempting to delete a grade.
+INFO 2024-11-20 13:43:53,398 views Fetching grades for user: admin
+INFO 2024-11-20 13:43:53,398 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 13:43:53,399 views Assigning permissions for action: destroy
+INFO 2024-11-20 13:43:53,399 views Fetching grades for user: admin
+INFO 2024-11-20 13:43:53,399 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 13:43:53,399 views Assigning permissions for action: destroy
+INFO 2024-11-20 13:43:53,400 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 13:43:54,586 views Assigning permissions for action: destroy
+WARNING 2024-11-20 13:43:54,587 log Forbidden: /grades/1/
+INFO 2024-11-20 13:43:55,777 views Assigning permissions for action: destroy
+INFO 2024-11-20 13:43:55,777 views User teacher is attempting to delete a grade.
+INFO 2024-11-20 13:43:55,778 views Fetching grades for user: teacher
+INFO 2024-11-20 13:43:55,778 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 13:43:55,778 views Assigning permissions for action: destroy
+INFO 2024-11-20 13:43:55,778 views Fetching grades for user: teacher
+INFO 2024-11-20 13:43:55,778 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 13:43:55,779 views Assigning permissions for action: destroy
+INFO 2024-11-20 13:43:55,780 views Grade deleted successfully: student - Test Course - 90.0
+INFO 2024-11-20 13:43:56,967 views Assigning permissions for action: list
+INFO 2024-11-20 13:43:56,968 views Fetching grades for user: admin
+INFO 2024-11-20 13:43:56,968 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 13:43:58,152 views Assigning permissions for action: list
+INFO 2024-11-20 13:43:58,153 views Fetching grades for user: student
+INFO 2024-11-20 13:43:58,153 views User student is a student. Returning their grades.
+INFO 2024-11-20 13:43:59,343 views Assigning permissions for action: list
+INFO 2024-11-20 13:43:59,344 views Fetching grades for user: teacher
+INFO 2024-11-20 13:43:59,344 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 13:44:00,533 views Assigning permissions for action: partial_update
+INFO 2024-11-20 13:44:00,534 views User admin is attempting to update a grade.
+INFO 2024-11-20 13:44:00,534 views Fetching grades for user: admin
+INFO 2024-11-20 13:44:00,534 views User admin is an admin. Returning all grades.
+INFO 2024-11-20 13:44:00,534 views Assigning permissions for action: partial_update
+INFO 2024-11-20 13:44:00,535 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+INFO 2024-11-20 13:44:01,726 views Assigning permissions for action: partial_update
+WARNING 2024-11-20 13:44:01,727 log Forbidden: /grades/1/
+INFO 2024-11-20 13:44:02,914 views Assigning permissions for action: partial_update
+INFO 2024-11-20 13:44:02,914 views User teacher is attempting to update a grade.
+INFO 2024-11-20 13:44:02,914 views Fetching grades for user: teacher
+INFO 2024-11-20 13:44:02,914 views User teacher is a teacher. Returning grades for their courses.
+INFO 2024-11-20 13:44:02,915 views Assigning permissions for action: partial_update
+INFO 2024-11-20 13:44:02,915 views Grade updated successfully. Data: {'id': 1, 'student': 1, 'course': 1, 'grade': 98.0, 'date': '2024-11-20'}
+INFO 2024-11-20 13:44:04,152 views New user registered: testuser (ID: 1)
+INFO 2024-11-20 13:44:04,751 views User role updated: testuser (ID: 2) - student → teacher
+WARNING 2024-11-20 13:44:05,347 log Forbidden: /users2/role/
+INFO 2024-11-20 13:44:05,649 views User role updated: admin (ID: 1) - admin → teacher
+WARNING 2024-11-20 13:44:05,951 log Forbidden: /users1/role/

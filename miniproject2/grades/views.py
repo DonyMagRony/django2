@@ -6,6 +6,7 @@ from .models import Grade
 from .serializers import GradeSerializer
 from users.permissions import IsStudent, IsTeacher, IsAdmin
 from courses.models import Course
+from drf_yasg.utils import swagger_auto_schema
 
 # Configure logger
 logger = logging.getLogger('app_logger')
@@ -55,6 +56,23 @@ class GradeViewSet(viewsets.ModelViewSet):
         logger.warning(f"User {user} does not have access to any grades.")
         return Grade.objects.none()
 
+    @swagger_auto_schema(
+        operation_description="Retrieve a list of grades.",
+        responses={200: GradeSerializer(many=True)},
+    )
+    def list(self, request, *args, **kwargs):
+        """
+        Retrieve a list of grades based on the user's role.
+        """
+        logger.info(f"User {self.request.user} is retrieving the grade list.")
+        return super().list(request, *args, **kwargs)
+
+
+    @swagger_auto_schema(
+        operation_description="Create a grade for a student in a specific course.",
+        request_body=GradeSerializer,
+        responses={201: GradeSerializer, 400: 'Invalid course ID.', 403: 'Forbidden.'},
+    )
     def create(self, request, *args, **kwargs):
         """
         Teachers can create grades for students in their courses.
@@ -100,6 +118,13 @@ class GradeViewSet(viewsets.ModelViewSet):
         logger.info(f"Grade created successfully: {grade}")
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
+
+
+    @swagger_auto_schema(
+        operation_description="Update an existing grade.",
+        request_body=GradeSerializer,
+        responses={200: GradeSerializer, 400: 'Invalid data.'},
+    )
     def update(self, request, *args, **kwargs):
         """
         Log grade updates.
@@ -109,6 +134,11 @@ class GradeViewSet(viewsets.ModelViewSet):
         logger.info(f"Grade updated successfully. Data: {response.data}")
         return response
 
+
+    @swagger_auto_schema(
+        operation_description="Delete a grade.",
+        responses={204: 'Grade deleted successfully.'},
+    )
     def destroy(self, request, *args, **kwargs):
         """
         Log grade deletions.

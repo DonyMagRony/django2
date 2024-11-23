@@ -57,8 +57,8 @@ INSTALLED_APPS = [
     'grades',
     'notifications',
     'students',
-    'users'
-
+    'users',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware'
 ]
 
 ROOT_URLCONF = 'miniproject2.urls'
@@ -105,12 +106,12 @@ DATABASES = {
         'NAME': BASE_DIR / 'analytics.sqlite3',
     },
     # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': os.environ.get('DB_DEFAULT_NAME'),  # Retrieves the value from environment variable
-    #     'USER': os.environ.get('DB_DEFAULT_USER'),  # Retrieves the value from environment variable
-    #     'PASSWORD': os.environ.get('DB_DEFAULT_PASSWORD'),  # Retrieves the value from environment variable
-    #     'HOST': os.environ.get('DB_HOST', 'localhost'),  # Defaults to localhost if not set
-    #     'PORT': os.environ.get('DB_PORT', '5432'),  # Defaults to 5432 if not set
+    #         'ENGINE': 'django.db.backends.postgresql',
+    #         'NAME': os.environ.get('DB_DEFAULT_NAME', 'default'),
+    #         'USER': os.environ.get('DB_DEFAULT_USER', 'user'),
+    #         'PASSWORD': os.environ.get('DB_DEFAULT_PASSWORD', '1234'),
+    #         'HOST': os.environ.get('DB_HOST', 'localhost'),
+    #         'PORT': os.environ.get('DB_PORT', '5432'),
     # },
     # 'analytics': {
     #     'ENGINE': 'django.db.backends.postgresql',
@@ -268,3 +269,6 @@ LOGGING = {
 
 USE_DEPRECATED_PYTZ = True
 
+INTERNAL_IPS = [
+    '127.0.0.1',
+]

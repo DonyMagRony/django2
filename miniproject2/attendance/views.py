@@ -14,6 +14,9 @@ from courses.models import Course, Enrollment
 # Set up a logger
 logger = logging.getLogger('app_logger')
 
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+
 class AttendanceViewSet(viewsets.ModelViewSet):
     """
     Viewset for admins and teachers to view, create, update, and delete attendance.
@@ -29,12 +32,42 @@ class AttendanceViewSet(viewsets.ModelViewSet):
         return [IsAdmin()]  # Allow Admins to do everything
 
     def get_queryset(self):
-        # Teachers can only view attendance for courses they are teaching
         if self.request.user.role == 'teacher':
             logger.info(f"Teacher {self.request.user} retrieving attendance for their courses.")
             return Attendance.objects.filter(course__professor=self.request.user)
         logger.info(f"Admin {self.request.user} retrieving all attendance records.")
         return Attendance.objects.all()
+
+    @swagger_auto_schema(
+        operation_description="Retrieve a list of all attendance records.",
+        responses={200: AttendanceSerializer(many=True)},
+    )
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_description="Create a new attendance record.",
+        request_body=AttendanceSerializer,
+        responses={201: AttendanceSerializer},
+    )
+    def create(self, request, *args, **kwargs):
+        return super().create(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_description="Update an existing attendance record.",
+        request_body=AttendanceSerializer,
+        responses={200: AttendanceSerializer},
+    )
+    def update(self, request, *args, **kwargs):
+        return super().update(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_description="Delete an attendance record.",
+        responses={204: "No Content"},
+    )
+    def destroy(self, request, *args, **kwargs):
+        return super().destroy(request, *args, **kwargs)
+
 
 
 class MarkAttendanceView(APIView):
@@ -43,6 +76,35 @@ class MarkAttendanceView(APIView):
     """
     permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(
+        operation_description="Mark attendance for a specific course and date.",
+        manual_parameters=[
+            openapi.Parameter(
+                'student_id', openapi.IN_PATH, description="ID of the student", type=openapi.TYPE_INTEGER
+            ),
+            openapi.Parameter(
+                'course_id', openapi.IN_PATH, description="ID of the course", type=openapi.TYPE_INTEGER
+            ),
+        ],
+        request_body=openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            properties={
+                'date': openapi.Schema(type=openapi.TYPE_STRING, format='date', description='Date for attendance'),
+                'status': openapi.Schema(
+                    type=openapi.TYPE_STRING,
+                    enum=['present', 'absent'],
+                    description="Attendance status ('present' or 'absent')"
+                ),
+            },
+            required=['date', 'status']
+        ),
+        responses={
+            200: openapi.Response("Attendance marked successfully."),
+            400: "Invalid status.",
+            403: "Unauthorized access.",
+            404: "Student or course not found.",
+        },
+    )
     def post(self, request, student_id, course_id):
         """
         Students can mark their own attendance for a specific course and date.

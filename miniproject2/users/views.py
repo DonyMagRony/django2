@@ -6,7 +6,7 @@ from rest_framework import status
 from users.serializers import CustomUserSerializer
 from .models import User
 from djoser.views import UserViewSet  # Import the Djoser UserViewSet
-
+from drf_yasg.utils import swagger_auto_schema
 
 import logging
 logger = logging.getLogger('app_logger')  # Use the custom logger defined in settings
@@ -21,6 +21,14 @@ class CustomUserViewSet(UserViewSet):
 
 class UpdateRoleView(APIView):
     permission_classes = [IsAuthenticated, IsAdminUser]
+    @swagger_auto_schema(
+        operation_description="Update a user's role. Only admin users can perform this action.",
+        responses={
+            200: "Role updated successfully.",
+            400: "Role is already set to the requested value.",
+            404: "User not found."
+        }
+    )
 
     def patch(self, request, pk):
         try:
