@@ -97,27 +97,28 @@ DATABASES = {
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
+    # # },
+    # 'analytics': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'analytics.sqlite3',
     # },
-    'analytics': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'analytics.sqlite3',
-    },
     'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'default',
-            'USER': 'default_user',
-            'PASSWORD':'pass',
-            'HOST':'localhost',
-            'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_DEFAULT_NAME'),  
+        'USER': os.environ.get('DB_DEFAULT_USER'), 
+        'PASSWORD': os.environ.get('DB_DEFAULT_PASSWORD'), 
+        'HOST': os.environ.get('DB_HOST', 'localhost'), 
+        'PORT': os.environ.get('DB_PORT', '5432'), 
     },
-    # 'analytics': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': os.environ.get('DB_ANALYTICS_NAME'),  # Retrieves the value from environment variable
-    #     'USER': os.environ.get('DB_ANALYTICS_USER'),  # Retrieves the value from environment variable
-    #     'PASSWORD': os.environ.get('DB_ANALYTICS_PASSWORD'),  # Retrieves the value from environment variable
-    #     'HOST': os.environ.get('DB_HOST', 'localhost'),  # Defaults to localhost if not set
-    #     'PORT': os.environ.get('DB_PORT', '5432'),  # Defaults to 5432 if not set
-    # },
+    'analytics': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_ANALYTICS_NAME'),  
+        'USER': os.environ.get('DB_ANALYTICS_USER'), 
+        'PASSWORD': os.environ.get('DB_ANALYTICS_PASSWORD'), 
+        'HOST': os.environ.get('DB_HOST', 'localhost'), 
+        'PORT': os.environ.get('DB_PORT', '5432'), 
+    },
 }
 
 
