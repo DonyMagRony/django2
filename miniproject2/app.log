@@ -3518,3 +3518,577 @@ INFO 2024-11-20 13:44:04,751 views User role updated: testuser (ID: 2) - student
 WARNING 2024-11-20 13:44:05,347 log Forbidden: /users2/role/
 INFO 2024-11-20 13:44:05,649 views User role updated: admin (ID: 1) - admin → teacher
 WARNING 2024-11-20 13:44:05,951 log Forbidden: /users1/role/
+INFO 2024-11-23 07:27:32,859 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-23 07:27:36,187 log Not Found: /
+WARNING 2024-11-23 07:27:36,188 basehttp "GET / HTTP/1.1" 404 17744
+INFO 2024-11-23 07:27:36,246 basehttp "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 16675
+INFO 2024-11-23 07:27:36,246 basehttp "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14601
+INFO 2024-11-23 07:27:36,279 basehttp "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-11-23 07:27:36,313 basehttp "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4742
+WARNING 2024-11-23 07:27:36,451 log Not Found: /favicon.ico
+WARNING 2024-11-23 07:27:36,451 basehttp "GET /favicon.ico HTTP/1.1" 404 17806
+ERROR 2024-11-23 07:27:40,477 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6380. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 42, in wrapper
+    return panel._record_call(cache, name, original_method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/panels/cache.py", line 149, in _record_call
+    value = original_method(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6380. Connection refused.
+ERROR 2024-11-23 07:27:40,558 basehttp "GET /swagger/ HTTP/1.1" 500 192143
+INFO 2024-11-23 07:33:43,550 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 07:33:46,586 basehttp "GET /swagger/ HTTP/1.1" 200 15765
+INFO 2024-11-23 07:33:46,655 basehttp "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO 2024-11-23 07:33:46,660 basehttp "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-11-23 07:33:46,661 basehttp "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO 2024-11-23 07:33:46,664 basehttp "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO 2024-11-23 07:33:46,668 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+INFO 2024-11-23 07:33:46,673 basehttp "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-11-23 07:33:46,675 basehttp "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+INFO 2024-11-23 07:33:46,679 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+INFO 2024-11-23 07:33:46,700 basehttp "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+INFO 2024-11-23 07:33:46,872 basehttp "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-11-23 07:33:46,877 basehttp "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-11-23 07:33:47,001 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-23 07:33:47,001 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-23 07:33:47,010 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-23 07:33:47,010 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-23 07:33:47,011 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-23 07:33:47,012 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-23 07:33:47,013 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-23 07:33:47,013 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-23 07:33:47,053 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-23 07:33:47,054 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-23 07:33:47,096 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 31812
+INFO 2024-11-23 07:33:47,399 basehttp "GET /__debug__/history_sidebar/?store_id=0cfa7ed56e224a02bb8c438e742b166a HTTP/1.1" 200 10216
+INFO 2024-11-23 07:37:32,458 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 07:37:33,614 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 07:37:35,596 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 07:37:36,517 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 07:37:38,482 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 07:37:39,357 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 07:38:07,369 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 07:38:08,492 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 07:38:50,053 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 07:38:51,232 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 07:40:43,781 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-23 07:40:44,650 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 07:40:48,703 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-23 07:40:49,601 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 07:40:56,728 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/courses/views.py changed, reloading.
+INFO 2024-11-23 07:40:57,600 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 07:56:21,811 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 07:59:15,892 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 08:02:35,060 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 08:02:36,212 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 08:03:45,197 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 08:22:58,811 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 08:23:19,497 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 08:23:20,427 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-23 08:23:23,780 log Not Found: /
+WARNING 2024-11-23 08:23:23,781 basehttp "GET / HTTP/1.1" 404 17744
+INFO 2024-11-23 08:23:23,833 basehttp "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-11-23 08:23:23,834 basehttp "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-11-23 08:23:23,859 basehttp "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-11-23 08:23:23,892 basehttp "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-11-23 08:23:29,515 basehttp "GET /swagger/ HTTP/1.1" 200 15765
+INFO 2024-11-23 08:23:29,974 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-23 08:23:29,975 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-23 08:23:29,978 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-23 08:23:29,979 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-23 08:23:29,982 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-23 08:23:29,982 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-23 08:23:29,984 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-23 08:23:29,985 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-23 08:23:30,031 views Fetching grades for user: AnonymousUser
+WARNING 2024-11-23 08:23:30,032 views User AnonymousUser does not have access to any grades.
+INFO 2024-11-23 08:23:30,081 basehttp "GET /swagger/?format=openapi HTTP/1.1" 200 31812
+INFO 2024-11-23 08:23:30,408 basehttp "GET /__debug__/history_sidebar/?store_id=7aa455531c1247f4b653bfa647a073c1 HTTP/1.1" 200 10216
+WARNING 2024-11-23 08:23:35,725 log Not Found: /accounts/login/
+WARNING 2024-11-23 08:23:35,726 basehttp "GET /accounts/login/?next=/swagger/ HTTP/1.1" 404 17852
+WARNING 2024-11-23 08:25:34,207 log Not Found: /accounts/login/
+WARNING 2024-11-23 08:25:34,207 basehttp "GET /accounts/login/?next=/swagger/ HTTP/1.1" 404 17852
+INFO 2024-11-23 08:25:45,439 basehttp "GET /__debug__/history_sidebar/?store_id=7aa455531c1247f4b653bfa647a073c1 HTTP/1.1" 200 10216
+WARNING 2024-11-23 08:26:03,476 log Not Found: /accounts/login/
+WARNING 2024-11-23 08:26:03,477 basehttp "GET /accounts/login/?next=/swagger/ HTTP/1.1" 404 17852
+INFO 2024-11-23 08:26:38,720 views Assigning permissions for action: list
+WARNING 2024-11-23 08:26:38,736 log Unauthorized: /grades/
+WARNING 2024-11-23 08:26:38,737 basehttp "GET /grades/ HTTP/1.1" 401 58
+INFO 2024-11-23 08:26:38,963 basehttp "GET /__debug__/history_sidebar/?store_id=48cbacc89b4242c998e644b245e52acb HTTP/1.1" 200 10200
+INFO 2024-11-23 08:27:13,717 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/analytics/models.py changed, reloading.
+INFO 2024-11-23 08:27:14,809 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 11:27:08,019 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 12:19:57,521 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 12:29:43,751 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 12:29:44,341 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 12:30:42,956 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:22:53,358 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:23:05,912 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:23:55,184 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:23:55,773 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:24:02,361 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:24:07,036 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:24:07,617 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:24:18,515 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:24:19,080 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:24:22,782 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:24:23,351 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:24:25,967 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:24:26,519 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:24:30,179 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:24:30,745 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:24:32,374 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:24:32,938 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:32:58,975 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:32:59,581 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:33:01,165 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:33:01,739 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:33:05,396 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:33:05,981 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:33:11,688 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:33:12,272 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:33:15,975 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:33:16,550 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:34:44,694 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:34:45,250 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:34:47,882 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:35:01,706 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-23 13:35:07,995 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+ERROR 2024-11-23 13:35:07,996 basehttp "GET / HTTP/1.1" 500 91972
+INFO 2024-11-23 13:35:34,464 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:35:35,087 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:35:42,605 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:35:43,158 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:35:59,032 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:35:59,567 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:36:13,568 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:36:14,156 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:36:18,805 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:36:19,368 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:36:20,828 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:36:21,387 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:53:32,735 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:53:33,308 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-23 13:53:35,085 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py", line 38, in <lambda>
+    path('', lambda request: redirect('auth/register/')),
+                             ^^^^^^^^
+NameError: name 'redirect' is not defined
+ERROR 2024-11-23 13:53:35,125 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+ERROR 2024-11-23 13:53:35,126 basehttp "GET / HTTP/1.1" 500 92074
+ERROR 2024-11-23 13:53:37,683 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py", line 38, in <lambda>
+    path('', lambda request: redirect('auth/register/')),
+                             ^^^^^^^^
+NameError: name 'redirect' is not defined
+ERROR 2024-11-23 13:53:37,723 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+ERROR 2024-11-23 13:53:37,724 basehttp "GET / HTTP/1.1" 500 92211
+ERROR 2024-11-23 13:53:46,275 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+ERROR 2024-11-23 13:53:46,276 basehttp "GET /swagger/ HTTP/1.1" 500 92261
+ERROR 2024-11-23 13:53:51,228 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py", line 38, in <lambda>
+    path('', lambda request: redirect('auth/register/')),
+                             ^^^^^^^^
+NameError: name 'redirect' is not defined
+ERROR 2024-11-23 13:53:51,275 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+ERROR 2024-11-23 13:53:51,276 basehttp "GET / HTTP/1.1" 500 92074
+INFO 2024-11-23 13:54:08,235 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:54:08,837 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:54:11,148 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:54:11,668 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:54:18,435 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:54:19,044 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:54:34,074 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:54:34,674 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-23 13:54:37,592 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+ERROR 2024-11-23 13:54:37,593 basehttp "GET / HTTP/1.1" 500 92251
+ERROR 2024-11-23 13:54:38,369 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+ERROR 2024-11-23 13:54:38,370 basehttp "GET / HTTP/1.1" 500 92251
+ERROR 2024-11-23 13:54:39,076 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: debug_toolbar/base.html
+ERROR 2024-11-23 13:54:39,077 basehttp "GET / HTTP/1.1" 500 92251
+INFO 2024-11-23 13:57:18,833 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:57:19,427 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:57:22,087 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:57:22,572 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:57:23,860 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:57:24,245 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:57:26,541 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:57:27,044 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:57:28,703 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 13:57:29,346 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:57:36,265 basehttp "GET / HTTP/1.1" 302 0
+WARNING 2024-11-23 13:57:36,288 log Not Found: /auth/register/
+WARNING 2024-11-23 13:57:36,289 basehttp "GET /auth/register/ HTTP/1.1" 404 25661
+INFO 2024-11-23 13:57:36,363 basehttp "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-11-23 13:57:36,365 basehttp "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-11-23 13:57:36,370 basehttp "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-11-23 13:57:36,415 basehttp "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-11-23 13:58:03,140 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:58:03,748 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:58:18,426 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:58:18,980 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:58:20,623 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:58:21,199 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:58:23,880 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:58:24,514 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:58:27,174 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:58:27,780 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:58:29,431 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:58:30,087 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 13:58:32,723 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 13:58:33,355 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-23 13:58:35,509 log Not Found: /auth/register/
+WARNING 2024-11-23 13:58:35,510 basehttp "GET /auth/register/ HTTP/1.1" 404 25661
+INFO 2024-11-23 15:22:28,913 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-11-23 15:22:28,937 basehttp "GET /users/register HTTP/1.1" 301 0
+WARNING 2024-11-23 15:22:29,001 log Unauthorized: /users/register/
+WARNING 2024-11-23 15:22:29,001 basehttp "GET /users/register/ HTTP/1.1" 401 22964
+INFO 2024-11-23 15:22:29,068 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-11-23 15:22:29,073 basehttp "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-11-23 15:22:29,075 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-11-23 15:22:29,075 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-11-23 15:22:29,075 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2024-11-23 15:22:29,076 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2024-11-23 15:22:29,078 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2024-11-23 15:22:29,087 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2024-11-23 15:22:29,087 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-11-23 15:22:29,087 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2024-11-23 15:22:29,087 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-11-23 15:22:29,089 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2024-11-23 15:22:29,114 basehttp "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-11-23 15:22:29,147 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2024-11-23 15:22:29,164 basehttp "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-11-23 15:22:29,229 basehttp "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+WARNING 2024-11-23 15:22:39,019 log Bad Request: /users/register/
+WARNING 2024-11-23 15:22:39,020 basehttp "POST /users/register/ HTTP/1.1" 400 24589
+WARNING 2024-11-23 15:22:54,556 log Bad Request: /users/register/
+WARNING 2024-11-23 15:22:54,557 basehttp "POST /users/register/ HTTP/1.1" 400 24906
+INFO 2024-11-23 15:23:13,768 views New user registered: Darion (ID: 10)
+INFO 2024-11-23 15:23:13,801 basehttp "POST /users/register/ HTTP/1.1" 201 24463
+WARNING 2024-11-23 15:23:21,275 log Not Found: /users/login/
+WARNING 2024-11-23 15:23:21,275 basehttp "GET /users/login/ HTTP/1.1" 404 27517
+WARNING 2024-11-23 15:23:31,631 log Not Found: /auth/login/
+WARNING 2024-11-23 15:23:31,631 basehttp "GET /auth/login/ HTTP/1.1" 404 25649
+INFO 2024-11-23 15:23:38,227 basehttp "GET /auth/users/login HTTP/1.1" 301 0
+WARNING 2024-11-23 15:23:38,242 log Unauthorized: /auth/users/login/
+WARNING 2024-11-23 15:23:38,242 basehttp "GET /auth/users/login/ HTTP/1.1" 401 18875
+WARNING 2024-11-23 15:23:41,409 log Unauthorized: /auth/users/login/
+WARNING 2024-11-23 15:23:41,410 basehttp "GET /auth/users/login/ HTTP/1.1" 401 18877
+WARNING 2024-11-23 15:23:50,329 log Unauthorized: /auth/users/
+WARNING 2024-11-23 15:23:50,329 basehttp "GET /auth/users/ HTTP/1.1" 401 22858
+WARNING 2024-11-23 15:23:56,225 log Bad Request: /auth/users/
+WARNING 2024-11-23 15:23:56,225 basehttp "POST /auth/users/ HTTP/1.1" 400 24481
+WARNING 2024-11-23 15:24:12,461 log Bad Request: /auth/users/
+WARNING 2024-11-23 15:24:12,462 basehttp "POST /auth/users/ HTTP/1.1" 400 24493
+WARNING 2024-11-23 15:24:19,675 log Unauthorized: /users/register/activation/
+WARNING 2024-11-23 15:24:19,675 basehttp "GET /users/register/activation/ HTTP/1.1" 401 21347
+INFO 2024-11-23 17:04:26,079 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 17:04:26,735 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:04:31,172 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 17:04:31,706 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:04:34,098 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 17:04:34,636 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:04:38,059 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 17:04:38,602 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:05:05,774 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 17:05:06,316 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:05:07,588 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 17:05:08,145 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:05:10,512 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/urls.py changed, reloading.
+INFO 2024-11-23 17:05:11,050 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:05:37,219 basehttp "GET /analytics/api-usage HTTP/1.1" 301 0
+ERROR 2024-11-23 17:05:37,366 log Internal Server Error: /analytics/api-usage/
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: analytics_apirequestlog
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/analytics/views.py", line 15, in api_usage_graph
+    endpoints = [item['endpoint'] for item in data]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1525, in results_iter
+    results = self.execute_sql(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/daniyal/.cache/pypoetry/virtualenvs/project-0nRPPibi-py3.12/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: analytics_apirequestlog
+ERROR 2024-11-23 17:05:37,417 basehttp "GET /analytics/api-usage/ HTTP/1.1" 500 175871
+INFO 2024-11-23 17:05:37,482 basehttp "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-11-23 17:05:37,489 basehttp "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-11-23 17:05:37,490 basehttp "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-11-23 17:05:37,574 basehttp "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-11-23 17:16:11,524 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 17:16:55,953 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:17:27,988 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 17:17:28,680 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:17:32,722 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 17:17:33,378 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:17:37,454 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 17:17:38,107 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:17:47,321 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 17:17:48,011 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:17:52,065 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 17:17:52,694 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:17:54,684 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 17:17:55,315 autoreload Watching for file changes with StatReloader
+INFO 2024-11-23 17:18:11,771 autoreload /home/daniyal/Documents/Projects/Django/django 2/django2/miniproject2/miniproject2/settings.py changed, reloading.
+INFO 2024-11-23 17:18:53,631 autoreload Watching for file changes with StatReloader

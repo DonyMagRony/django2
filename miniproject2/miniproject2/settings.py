@@ -69,6 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'analytics.middleware.AnalyticsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware'
 ]
 
@@ -92,27 +93,23 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'miniproject2.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # },
     'analytics': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'analytics.sqlite3',
     },
-    # 'default': {
-    #         'ENGINE': 'django.db.backends.postgresql',
-    #         'NAME': os.environ.get('DB_DEFAULT_NAME', 'default'),
-    #         'USER': os.environ.get('DB_DEFAULT_USER', 'user'),
-    #         'PASSWORD': os.environ.get('DB_DEFAULT_PASSWORD', '1234'),
-    #         'HOST': os.environ.get('DB_HOST', 'localhost'),
-    #         'PORT': os.environ.get('DB_PORT', '5432'),
-    # },
+    'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'default',
+            'USER': 'default_user',
+            'PASSWORD':'pass',
+            'HOST':'localhost',
+            'PORT': '5432',
+    },
     # 'analytics': {
     #     'ENGINE': 'django.db.backends.postgresql',
     #     'NAME': os.environ.get('DB_ANALYTICS_NAME'),  # Retrieves the value from environment variable
@@ -164,7 +161,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
@@ -272,3 +268,5 @@ USE_DEPRECATED_PYTZ = True
 INTERNAL_IPS = [
     '127.0.0.1',
 ]
+
+DATABASE_ROUTERS = ['analytics.db_router.AnalyticsRouter']

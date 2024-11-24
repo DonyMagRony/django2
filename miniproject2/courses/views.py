@@ -9,6 +9,8 @@ from courses.models import Course, Enrollment
 from courses.serializers import CourseSerializer, EnrollmentSerializer
 from users.permissions import IsAdmin,IsStudent
 from drf_yasg.utils import swagger_auto_schema
+from analytics.models import CourseMetric
+
 
 import logging
 
@@ -181,6 +183,10 @@ class EnrollmentViewSet(viewsets.ModelViewSet):
         }
     )
     def retrieve(self, request, *args, **kwargs):
+        course = self.get_object()
+        metric, created = CourseMetric.objects.using('analytics').get_or_create(course=course)
+        metric.views += 1
+        metric.save(using='analytics')
         return super().retrieve(request, *args, **kwargs)
 
     @swagger_auto_schema(

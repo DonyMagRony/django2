@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.shortcuts import redirect
 from django.urls import path, include
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
@@ -32,9 +33,11 @@ urlpatterns = [
     path('courses/', include('courses.urls')),
     path('grades/', include('grades.urls')),
     path('attendance/', include('attendance.urls')),
+    path('analytics/', include('analytics.urls')),
 
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    path('', lambda request: redirect('users/register')),
 ]
 
 
